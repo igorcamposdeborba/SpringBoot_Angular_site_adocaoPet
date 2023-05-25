@@ -1,6 +1,8 @@
 package com.adocao.pet.entities.enums;
 
-public enum Gender {
-	MACHO,
-	FEMEA
+public enum Size {
+	P,
+	M,
+	G
+
 }
