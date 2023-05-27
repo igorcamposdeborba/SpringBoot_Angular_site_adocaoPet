@@ -1,0 +1,6 @@
+package com.adocao.pet.entities;
+
+@Entity
+public class Adopter {
+
+}

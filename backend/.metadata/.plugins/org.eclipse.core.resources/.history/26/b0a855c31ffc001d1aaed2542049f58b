@@ -1,0 +1,39 @@
+package com.adocao.pet.services;
+
+
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.adocao.pet.entities.Pet;
+import com.adocao.pet.entities.enums.Gender;
+import com.adocao.pet.entities.enums.Health;
+import com.adocao.pet.entities.enums.Size;
+import com.adocao.pet.repositories.AdopterPetAssociationRepository;
+import com.adocao.pet.repositories.AdopterRepository;
+import com.adocao.pet.repositories.OngRepository;
+import com.adocao.pet.repositories.PetRepository;
+
+@Service
+public class DBService {
+
+	@Autowired // spring intancia objeto injetando dependência
+	private PetRepository petRepository;
+	@Autowired
+	private OngRepository ongRepository;
+	@Autowired
+	private AdopterRepository adopterRepository;
+	@Autowired
+	private AdopterPetAssociationRepository adopterPetRepository;
+	
+	public void instantiateDataBase() {
+		Set<Health> healthPet1 = new HashSet<>();
+		healthPet1.addDescription(Health.CASTRADO);
+		healthPet1.addDescription(Health.VERMIFUGADO);
+		
+		// Integer id, String name, String image, Size size, Gender gender, Set<Health> health, String temperament
+		Pet pet1 = new Pet(null, "Rex", "rex1.jpg", Size.M, Gender.MACHO, healthPet1, "Dócil e ativo");
+	}
+	
+}

@@ -1,0 +1,14 @@
+package com.adocao.pet.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.adocao.pet.repositories.PetRepository;
+
+@Service
+public class DBService {
+
+	@Autowired // spring intancia objeto injetando dependência
+	private PetRepository petRepositoryç
+	
+}

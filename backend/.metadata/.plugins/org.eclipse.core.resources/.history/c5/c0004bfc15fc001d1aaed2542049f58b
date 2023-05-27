@@ -1,0 +1,36 @@
+package com.adocao.pet.entities.enums;
+
+import java.util.List;
+
+public enum Health {
+	VACINADO,
+	VERMIFUGADO,
+	CASTRADO;
+	
+	private List<String> description;
+	
+	private Health(String description) {
+		this.description.add(description);
+	}
+	
+	public String getDescription(String descriptionParam) {
+		for (String i : this.description) {
+			return i.valueOf(descriptionParam);
+		}
+	}
+	public List<String> getAllDescription() {
+		return description;
+	}
+	
+	public static String toDescription(String description) {
+		if (description == null) { // exception
+			return null;
+		}
+		for (Health i : Health.values()) {
+			if (description.equals(i.getDescription(description))) {
+				;
+			}
+		}
+		return ;
+	}
+}

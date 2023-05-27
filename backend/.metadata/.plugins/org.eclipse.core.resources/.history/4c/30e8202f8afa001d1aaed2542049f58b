@@ -1,0 +1,15 @@
+package com.adocao.pet.entities;
+
+import java.time.Instant;
+
+import jakarta.persistence.Entity;
+
+// Classe associativa que registra a lista de pedidos por data e hora de um Adopter para um Pet.
+
+@Entity
+public class AdopterPetAssociation {
+	
+	private Instant dateRequest; // data e hora (classe Date está deprecated em Java. Substituída por Instant)
+	
+	
+}

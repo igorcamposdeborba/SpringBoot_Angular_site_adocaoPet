@@ -29,18 +29,18 @@ public class Adopter implements Serializable {
 	@NotNull
 	private String telephone;
 	
-	// Composição
-	@OneToMany
-	private List<Pet> pet = new ArrayList<Pet>();
-	@OneToMany
+	// Associação
+	//@OneToMany (mappedBy = "pet")
+	//private List<Pet> pet = new ArrayList<Pet>();
+	@OneToMany (mappedBy = "adopter")
 	private List<AdopterPetAssociation> adopterPetAssociation = new ArrayList<AdopterPetAssociation>();
 	
 	
-	protected Adopter() { // construtor vazio para superclasse Serializable &&  protected porque Class, Package e Subclass podem acessar
+	public Adopter() { // construtor vazio para superclasse Serializable &&  protected porque Class, Package e Subclass podem acessar
 		super();
 	}
 	
-	protected Adopter(Integer id, String name, String email, String telephone, AdopterPetAssociation adopterPetAssociation) {
+	public Adopter(Integer id, String name, String email, String telephone, AdopterPetAssociation adopterPetAssociation) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -76,15 +76,15 @@ public class Adopter implements Serializable {
 	}
 	
 	
-	public List<Pet> getPet() {
+	/*public List<Pet> getPet() {
 		return pet;
-	}
+	}*/
 	public List<AdopterPetAssociation> getAllDateRequestAdotation(){
 		return adopterPetAssociation;
 	}
-	public void addPet(Pet pet) {
+	/*public void addPet(Pet pet) {
 		this.pet.add(pet);
-	}
+	}*/
 	public void createDateRequestAdotation() {
 		this.adopterPetAssociation.add(new AdopterPetAssociation());
 	}
@@ -95,7 +95,7 @@ public class Adopter implements Serializable {
 	}
 	
 	
-	// ! IMPLEMENTAR Hashcode e Equals: para poder adicionar valores comparando os valores dos objetos da lista List<AdopterPetAssociation> e List<Pet> pet
+	// Hashcode e Equals: para poder adicionar valores comparando os valores dos objetos da lista List<AdopterPetAssociation> e List<Pet> pet
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);

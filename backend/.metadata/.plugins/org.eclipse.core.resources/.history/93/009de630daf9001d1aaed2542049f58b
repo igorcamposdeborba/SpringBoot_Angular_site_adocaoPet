@@ -1,0 +1,36 @@
+package com.adocao.pet.entities;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.adocao.pet.entities.enums.Gender;
+import com.adocao.pet.entities.enums.Health;
+import com.adocao.pet.entities.enums.Size;
+
+import io.micrometer.common.lang.Nullable;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotNull;
+
+@Entity
+public class Pet {
+	
+	@Id
+	private Integer id;
+	@NotNull
+	private String name;
+	@NotNull
+	
+	private String image;
+	@Nullable
+	private Size size;
+	@Nullable
+	private Gender gender;
+	@Nullable
+	private List<Health> health = new ArrayList<Health>();
+	@Nullable
+	private String temperament;
+	
+	protected Pet() {}
+	
+}

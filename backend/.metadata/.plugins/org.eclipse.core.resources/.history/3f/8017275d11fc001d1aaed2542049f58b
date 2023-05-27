@@ -1,0 +1,37 @@
+package com.adocao.pet.entities.dtos;
+
+import java.io.Serializable;
+import java.util.List;
+
+import com.adocao.pet.entities.Ong;
+import com.adocao.pet.entities.enums.Gender;
+import com.adocao.pet.entities.enums.Health;
+import com.adocao.pet.entities.enums.Size;
+
+import io.micrometer.common.lang.Nullable;
+import jakarta.validation.constraints.NotNull;
+
+public class PetDTO implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
+	protected Integer id;
+	@NotNull (message = "O campo NOME é obrigatório")
+	protected String name;
+	@NotNull (message = "O campo IMAGEM é obrigatório")
+	protected String image;
+	
+	@Nullable
+	protected Size size;
+	@Nullable
+	protected Gender gender;
+	@Nullable
+	protected List<Health> temperament;
+	
+	// Agregação
+	protected Ong ong;
+	
+	// Campo salvo pelo Java para evitar outra chamada ao banco de dados (dado está na agregação com a outra tabela, Ong)
+	private String nameOng; // Vou usar na tabela para evitar duas requisições (id da linha + nome da Ong)
+
+
+}

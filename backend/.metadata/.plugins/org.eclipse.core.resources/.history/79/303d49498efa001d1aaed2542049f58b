@@ -1,0 +1,32 @@
+package com.adocao.pet.entities;
+
+import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
+
+import jakarta.persistence.Entity;
+
+// Classe associativa que registra a lista de pedidos por data e hora de um Adopter para um Pet.
+
+@Entity
+public class AdopterPetAssociation {
+	
+	private List<Instant> dateRequest; // data e hora (classe Date está deprecated em Java. Substituída por Instant porque aceita UTC e GTM)
+	
+	// Composição
+	List<Adopter> adopter = new ArrayList<Adopter>();
+	List<Pet> pet = new ArrayList<Pet>();
+	
+	public AdopterPetAssociation() {
+		this.dateRequest.add(Instant.now()); // Ao criar associação do objeto, já adiciona a data atual do primeiro pedido de adoção
+	}
+	
+	// Métodos de acesso
+	public List<Instant> getDateRequest(){
+		return dateRequest;
+	}
+	public void addDateRequest() {
+		this.dateRequest.add(Instant.now());
+	}
+	
+}

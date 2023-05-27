@@ -1,0 +1,5 @@
+package com.adocao.pet.repositories;
+
+public interface PetRepository extends JpaRepository<Pet, Integer id> {
+
+}

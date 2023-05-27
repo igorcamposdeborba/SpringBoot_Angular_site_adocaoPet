@@ -1,0 +1,33 @@
+package com.adocao.pet.entities;
+
+import java.io.Serializable;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Adopter implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	private String name;
+	private String email;
+	private String telephone;
+	
+	protected Adopter() { // construtor vazio para superclasse Serializable &&  protected porque Class, Package e Subclass podem acessar
+		super();
+	}
+	
+	protected Adopter(Integer id, String name, String email, String telephone) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+		this.telephone = telephone;
+	}
+	
+}

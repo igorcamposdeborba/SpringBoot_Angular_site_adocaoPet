@@ -1,0 +1,15 @@
+package com.adocao.pet.entities.enums;
+
+public enum Health {
+	VACINADO,
+	VERMIFUGADO,
+	CASTRADO;
+	
+	private String description;
+	
+	private Health(String description) {
+		this.description = description;
+	}
+	
+	
+}

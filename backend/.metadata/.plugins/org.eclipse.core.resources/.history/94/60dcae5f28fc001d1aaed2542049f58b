@@ -1,0 +1,8 @@
+package com.adocao.pet.entities.dtos;
+
+import java.io.Serializable;
+
+public class AdopterPetDTO implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+}

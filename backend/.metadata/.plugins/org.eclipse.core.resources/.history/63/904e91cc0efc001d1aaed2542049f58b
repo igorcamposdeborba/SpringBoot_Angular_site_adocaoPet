@@ -1,0 +1,25 @@
+package com.adocao.pet.services;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.adocao.pet.entities.Ong;
+import com.adocao.pet.entities.Pet;
+import com.adocao.pet.repositories.PetRepository;
+
+public class PetService {
+
+	@Autowired
+	private PetRepository petRepository;
+	
+	@Autowired
+	private Ong ongRepository;
+	
+	public Pet findById(Integer id) {
+		Optional<Pet> obj = petRepository.findById(id); // Optional: pode ou não encontrar o valor no banco de dados. Ele Não admite null
+		
+		return 
+	}
+	
+}

@@ -1,0 +1,19 @@
+package com.adocao.pet.entities;
+
+import java.io.Serializable;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Adopter implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	private Integer id;
+	private String name;
+	private String email;
+	private String telephone;
+	
+	
+}

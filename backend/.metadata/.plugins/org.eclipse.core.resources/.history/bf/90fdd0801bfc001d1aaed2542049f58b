@@ -1,0 +1,65 @@
+package com.adocao.pet.entities.dtos;
+
+import java.io.Serializable;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+import com.adocao.pet.entities.Ong;
+import com.adocao.pet.entities.Pet;
+import com.adocao.pet.entities.enums.Gender;
+import com.adocao.pet.entities.enums.Health;
+import com.adocao.pet.entities.enums.Size;
+
+import io.micrometer.common.lang.Nullable;
+import jakarta.validation.constraints.NotNull;
+
+public class PetDTO implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
+	protected Integer id;
+	@NotNull (message = "O campo NOME é obrigatório")
+	protected String name;
+	@NotNull (message = "O campo IMAGEM é obrigatório")
+	protected String image;
+	
+	@Nullable
+	protected Size size;
+	@Nullable
+	protected Gender gender;
+	@Nullable
+	protected Set<Health> health;
+	@Nullable
+	protected String temperament;
+	
+	// Agregação
+	protected Ong ong;
+	
+	// Campo salvo pelo Java para evitar outra chamada ao banco de dados (dado está na agregação com a outra tabela, Ong)
+	private String nameOng; // Vou usar na tabela para evitar duas requisições (id da linha + nome da Ong)
+	
+	public PetDTO() {
+		super();
+	}
+	
+	public PetDTO(Pet petObj) {
+		super();
+		this.id = petObj.getId();
+		this.name = petObj.getName();
+		this.image = petObj.getImage();
+		this.size = petObj.getSize();
+		this.gender = petObj.getGender();
+		this.health.add(petObj.getHealth().stream().map( i -> i.getId()).collect(Collectors.toSet())); // ! REVISAR porque teoricamente seria o ID do item da lista e não getClass
+		this.temperament = petObj.getTemperament();
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

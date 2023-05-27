@@ -1,0 +1,56 @@
+package com.adocao.pet.entities;
+
+import java.io.Serializable;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotNull;
+
+@Entity
+public class Adopter implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	@NotNull
+	private String name;
+	@NotNull
+	private String email;
+	@NotNull
+	private String telephone;
+	
+	// Composição
+	private Pet pet;
+	
+	
+	protected Adopter() { // construtor vazio para superclasse Serializable &&  protected porque Class, Package e Subclass podem acessar
+		super();
+	}
+	
+	protected Adopter(Integer id, String name, String email, String telephone) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+		this.telephone = telephone;
+	}
+	
+	
+	// Métodos de acesso
+	public Integer getId() {
+		return id;
+	}
+	public String getName() {
+		return name;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public String getTelephone() {
+		return telephone;
+	}
+	
+}

@@ -1,0 +1,12 @@
+package com.adocao.pet.entities;
+
+import java.io.Serializable;
+
+public class Ong implements Serializable { // Serializable para trafegar em rede por bytes
+	private static final long serialVersionUID = 1L;
+	
+	
+	protected Ong() { // construtor vazio para superclasse Serializable &&  protected porque Class, Package e Subclass podem acessar
+		super();
+	}
+}

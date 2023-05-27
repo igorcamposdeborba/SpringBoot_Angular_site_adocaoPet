@@ -1,0 +1,10 @@
+package com.adocao.pet.entities;
+
+import jakarta.persistence.Entity;
+
+// Classe associativa que registra a lista de pedidos por data e hora de um Adopter para um Pet.
+
+@Entity
+public class AdopterPetAssociation {
+
+}

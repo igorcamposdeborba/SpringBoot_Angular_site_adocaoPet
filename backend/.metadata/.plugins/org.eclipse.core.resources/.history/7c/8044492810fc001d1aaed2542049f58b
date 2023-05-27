@@ -1,0 +1,29 @@
+package com.adocao.pet.entities.dtos;
+
+import java.io.Serializable;
+import java.util.List;
+
+import com.adocao.pet.entities.Ong;
+import com.adocao.pet.entities.enums.Gender;
+import com.adocao.pet.entities.enums.Health;
+import com.adocao.pet.entities.enums.Size;
+
+import io.micrometer.common.lang.Nullable;
+
+public class PetDTO implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
+	protected Integer id;
+	@Nullable
+	protected Size size;
+	@Nullable
+	protected Gender gender;
+	@Nullable
+	protected List<Health> temperament;
+	
+	// Composição
+	protected Ong ong;
+	
+	
+
+}
