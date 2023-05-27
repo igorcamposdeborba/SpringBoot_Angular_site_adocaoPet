@@ -24,7 +24,7 @@ public class Adopter implements Serializable {
 	private Integer id;
 	@NotNull
 	private String name;
-	// @Column(unique = true) // Banco de dados não aceita valores repetidos em diferentes linhas/registro de e-mail
+	@Column(unique = true) // Banco de dados não aceita valores repetidos em diferentes linhas/registro de e-mail
 	@NotNull
 	private String email;
 	@NotNull
@@ -93,7 +93,7 @@ public class Adopter implements Serializable {
 	public void createDateRequestAdotation() {
 		this.adopterPetAssociation.add(new AdopterPetAssociation());
 	}
-	public void addDateRequestAdotation() { // sobrecarga do método
+	public void addDateRequestAdotation() { // ! REVISAR para ver se precisa porque o método createDateRequestAdotation já faz a mesma coisa
 		AdopterPetAssociation varRequestAdotation = new AdopterPetAssociation(); // criar objeto de data e hora do request de pedido de adoção
 		
 		this.adopterPetAssociation.add(varRequestAdotation); // adicionar na lista a data e hora do pedido de adoção

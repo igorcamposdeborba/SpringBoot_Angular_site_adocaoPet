@@ -18,7 +18,7 @@ public class AdopterDTO implements Serializable {
 	private Integer id;
 	@NotNull(message = "Campo NOME é obrigatório")
 	private String name;
-	// @Column(unique = true) // Banco de dados não aceita valores repetidos em diferentes linhas/registro de e-mail
+	@Column(unique = true) // Banco de dados não aceita valores repetidos em diferentes linhas/registro de e-mail
 	@NotNull(message = "Campo EMAIL é obrigatório")
 	private String email;
 	@NotNull(message = "Campo TELEFONE é obrigatório")
@@ -37,7 +37,7 @@ public class AdopterDTO implements Serializable {
 		this.id = objAdopter.getId();
 		this.name = objAdopter.getName();
 		this.email = objAdopter.getEmail();
-		this.telephone = objAdopter.getEmail();
+		this.telephone = objAdopter.getTelephone();
 		this.adopterPetAssociation = objAdopter.getAllDateRequestAdotation().stream().map( i -> i).collect(Collectors.toSet()); // REVISAR se tá certo passar a lista de requests. O ideal é substituir a data do o último request
 	}
 	

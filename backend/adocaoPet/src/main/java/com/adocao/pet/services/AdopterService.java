@@ -39,7 +39,7 @@ public class AdopterService {
 	
 	// !! REVISAR ( todo ) ver se devo implementar no AdopterDTO e aqui o relacionamento com AdopterPetAssociation E ao invés do AdopterPetAssociation salvar uma nova linha, ele atualiza o e-mail daquele usuário se já existe o e-mail para aquele Pet no banco de dados
 	// ADICIONA recurso no banco de dados
-	public Adopter create(AdopterDTO adopterDTO) {
+	public Adopter create(AdopterDTO adopterDTO) { // ! alterar para receber o ID do Pet
 		
 		// UPDATE: Validar se já existe o adopter no banco de dados pelo e-mail, se sim, só atualizar os dados que o adopter enviou.
 		Optional<Adopter> varAdopterOnDatabase = adopterRepository.findByEmail(adopterDTO.getEmail());
@@ -116,8 +116,8 @@ public class AdopterService {
 			throw new IllegalFormatException("Formato errado de TELEFONE. Exemplo: 55 48 981784550. Não use o telefone do exemplo.");
 		}
 		
-		if (adopterDTO.getTelephone().matches("((\\+?\\d+ ?)?\\(?[0-9]{2}\\)?\\s?[0-9]{4,5}(-?|\\.?)[0-9]{3,4})|([0-9]{11})|([0-9]{2}\\s?[0-9]{8,9})") == false) { // Regex validate telephone's value.   ((\+?\d+ ?)?\(?[0-9]{2}\)?\s?[0-9]{4,5}(-?|\.?)[0-9]{3,4})|([0-9]{11})|([0-9]{2}\s?[0-9]{8,9})
-			throw new IllegalFormatException("Formato errado de TELEFONE. Exemplo: 55 48 981784550");
+		if (adopterDTO.getTelephone().matches("^((?=[A-Z|a-z]).)*$") == false && adopterDTO.getTelephone().length() > 19) { // Regex validate telephone's value.
+			throw new IllegalFormatException("Formato errado de TELEFONE. Exemplo: 55 48 98178455");
 		}
 	}
 	/* Casos de uso de telefone válido

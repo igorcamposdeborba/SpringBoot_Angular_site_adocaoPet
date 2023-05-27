@@ -38,7 +38,7 @@ public class AdopterController {
 	
 	// Endpoint PUT EDITAR Adopter
 	@PutMapping
-	public ResponseEntity<AdopterDTO> update(@RequestBody AdopterDTO objDTO ){
+	public ResponseEntity<AdopterDTO> update(@Valid @RequestBody AdopterDTO objDTO ){
 		
 		Adopter newObj = adopterService.update(objDTO);
 		

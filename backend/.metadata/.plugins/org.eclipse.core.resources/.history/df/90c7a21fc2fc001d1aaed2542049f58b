@@ -1,0 +1,67 @@
+package com.adocao.pet.entities.dtos;
+
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+import com.adocao.pet.entities.Adopter;
+import com.adocao.pet.entities.AdopterPetAssociation;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.OneToMany;
+import jakarta.validation.constraints.NotNull;
+
+public class AdopterDTO implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
+	private Integer id;
+	@NotNull(message = "Campo NOME é obrigatório")
+	private String name;
+	// @Column(unique = true) // Banco de dados não aceita valores repetidos em diferentes linhas/registro de e-mail
+	@NotNull(message = "Campo EMAIL é obrigatório")
+	private String email;
+	@NotNull(message = "Campo TELEFONE é obrigatório")
+	private String telephone;
+	
+	// Associação: Classe associativa que conecta Pet e Adopter com um atributo compartilhado entre os dois na entity AdopterPetAssociation. Não associar Pet direto em Adopter senão criaria outra tabela.
+	@OneToMany (mappedBy = "adopter")
+	private Set<AdopterPetAssociation> adopterPetAssociation = new HashSet<AdopterPetAssociation>();
+	
+	
+	public AdopterDTO() {
+		super();
+	}
+	public AdopterDTO(Adopter objAdopter) {
+		super();
+		this.id = objAdopter.getId();
+		this.name = objAdopter.getName();
+		this.email = objAdopter.getEmail();
+		this.telephone = objAdopter.getEmail();
+		this.adopterPetAssociation = objAdopter.getAllDateRequestAdotation().stream().map( i -> i).collect(Collectors.toSet()); // REVISAR se tá certo passar a lista de requests. O ideal é substituir a data do o último request
+	}
+	
+	public Integer getId() {
+		return id;
+	}
+	public String getName() {
+		return name;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public String getTelephone() {
+		return telephone;
+	}
+	
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public void setTelephone(String telephone) {
+		this.telephone = telephone;
+	}
+	
+}
