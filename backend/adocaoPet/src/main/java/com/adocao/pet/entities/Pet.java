@@ -26,18 +26,12 @@ public class Pet implements Serializable { // Serializable para trafegar em rede
 	@Id // define primary key no banco de dados
 	@GeneratedValue (strategy = GenerationType.IDENTITY) // Banco de dados gera id
 	private Integer id;
-	@NotNull
 	private String name;
-	@NotNull
 	private String image;
 	
-	@Nullable
 	private Size size;
-	@Nullable
 	private Gender gender;
-	@Nullable
 	private Set<Health> health = new HashSet<Health>();
-	@Nullable
 	private String temperament;
 	
 	// Agregação: para relacionamento

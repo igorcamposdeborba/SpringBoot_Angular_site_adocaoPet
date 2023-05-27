@@ -14,6 +14,7 @@ import com.adocao.pet.entities.Pet;
 import com.adocao.pet.entities.dtos.PetDTO;
 import com.adocao.pet.services.PetService;
 
+// ENDPOINTS do Controller
 @RestController
 @RequestMapping(value = "/pets")
 public class PetController {

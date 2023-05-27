@@ -16,6 +16,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 // Classe associativa que registra a lista de pedidos por data e hora de um Adopter para um Pet.
+// Cada requisição é um Objeto/registro da tabela diferente. Por isso não implemento uma lista.
 
 @Entity
 public class AdopterPetAssociation implements Serializable { // Serializable para trafegar em rede por bytes
@@ -28,18 +29,11 @@ public class AdopterPetAssociation implements Serializable { // Serializable par
 	// private List<Instant> dateRequest; // data e hora (classe Date está deprecated em Java. Substituída por Instant porque aceita UTC e GTM)
 	private Instant dateRequest;
 	
-	// Composição
-	/*@JsonIgnore  // JsonIgnore: para evitar recursao infinita porque as duas classes têm composição uma para a outra
-	@JoinColumn(name = "adopter_id") // identifica que a responsabilidade é da classe Adopter e a primaryKey é o id
-	private List<Adopter> adopter = new ArrayList<Adopter>();
-	@JoinColumn(name = "pet_id")
-	private List<Pet> pet = new ArrayList<Pet>();
-	*/
 	@ManyToOne
     @JoinColumn(name = "pet_id")
     private Pet pet;
     
-	@JsonIgnore 
+	// @JsonIgnore  ! REVISAR SE COLOCO OU NÃO para evitar loop infinito de reflection
     @ManyToOne
     @JoinColumn(name = "adopter_id")
     private Adopter adopter;
@@ -47,17 +41,10 @@ public class AdopterPetAssociation implements Serializable { // Serializable par
 
 	public AdopterPetAssociation() {
 		super();
-		//this.dateRequest.add(Instant.now()); // Ao criar associação do objeto, já adiciona a data atual do pedido de adoção
 		this.dateRequest = Instant.now(); // Ao criar associação do objeto, já adiciona a data atual do pedido de adoção
 	}
 	
-	// Métodos de acesso
-	/*public List<Instant> getDateRequest(){
-		return dateRequest;
-	}
-	public void addDateRequest() {
-		this.dateRequest.add(Instant.now());
-	}*/
+
 	public Instant getDateRequest() {
 		return dateRequest;
 	}
@@ -67,15 +54,8 @@ public class AdopterPetAssociation implements Serializable { // Serializable par
 	public Integer getId() {
 		return id;
 	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
-	/*public List<Adopter> getAdopter(){
-		return adopter;
-	}
-	public List<Pet> getPet(){
-		return pet;
-	}*/
+	// Nota: Não implementado setId porque não vou alterar nenhum id e nem dar update. Se tivesse que dar update, daí sim eu teria que colocar o setId no SpringBoot, mesmo não alterando o id porque PUT é uma operação idempotente e por baixo ele realmente atualiza o id no Update
+
 	public Adopter getAdopter(){
 		return adopter;
 	}

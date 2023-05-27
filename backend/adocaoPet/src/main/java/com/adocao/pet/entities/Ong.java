@@ -15,15 +15,10 @@ public class Ong implements Serializable { // Serializable para trafegar em rede
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	@NotNull
 	private String name;
-	@NotNull
 	private String email;
-	@NotNull
 	private String telephone;
-	@NotNull
 	private String website;
-	@NotNull
 	private String responsible;
 	
 	public Ong() { // construtor vazio para superclasse Serializable &&  protected porque o mesmo Package, Classes e Subclasses podem acessar

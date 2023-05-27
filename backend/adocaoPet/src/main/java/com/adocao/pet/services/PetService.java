@@ -18,9 +18,6 @@ public class PetService {
 	@Autowired // spring intancia objeto injetando dependência
 	private PetRepository petRepository;
 	
-	// @Autowired  // ! REVISAR: DESCOMENTAR
-	private Ong ongRepository;
-	
 
 	public Pet findById(Integer id) {
 		Optional<Pet> objPet = petRepository.findById(id); // Optional: pode ou não encontrar o valor no banco de dados. Ele Não admite null

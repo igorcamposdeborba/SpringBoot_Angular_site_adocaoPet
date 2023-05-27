@@ -1,12 +1,10 @@
 package com.adocao.pet.entities;
 
 import java.io.Serializable;
-import java.time.Instant;
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import java.util.Set;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -29,11 +27,9 @@ public class Adopter implements Serializable {
 	@NotNull
 	private String telephone;
 	
-	// Associação
-	//@OneToMany (mappedBy = "pet")
-	//private List<Pet> pet = new ArrayList<Pet>();
+	// Associação: Classe associativa que conecta Pet e Adopter com um atributo compartilhado entre os dois na entity AdopterPetAssociation. Não associar Pet direto em Adopter senão criaria outra tabela.
 	@OneToMany (mappedBy = "adopter")
-	private List<AdopterPetAssociation> adopterPetAssociation = new ArrayList<AdopterPetAssociation>();
+	private Set<AdopterPetAssociation> adopterPetAssociation = new HashSet<AdopterPetAssociation>();
 	
 	
 	public Adopter() { // construtor vazio para superclasse Serializable &&  protected porque Class, Package e Subclass podem acessar
@@ -74,17 +70,11 @@ public class Adopter implements Serializable {
 	public void setTelephone(String telephone) {
 		this.telephone = telephone;
 	}
-	
-	
-	/*public List<Pet> getPet() {
-		return pet;
-	}*/
-	public List<AdopterPetAssociation> getAllDateRequestAdotation(){
+
+	public Set<AdopterPetAssociation> getAllDateRequestAdotation(){
 		return adopterPetAssociation;
 	}
-	/*public void addPet(Pet pet) {
-		this.pet.add(pet);
-	}*/
+
 	public void createDateRequestAdotation() {
 		this.adopterPetAssociation.add(new AdopterPetAssociation());
 	}

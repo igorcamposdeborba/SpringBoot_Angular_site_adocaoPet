@@ -35,7 +35,7 @@ public class PetDTO implements Serializable {
 	// AGREGAÇÃO: para relacionamento
 	protected Ong ong;
 	
-	// Campo salvo pelo Java para evitar outra chamada ao banco de dados (dado está na agregação com a outra tabela, Ong)
+	// Atributo PARA EVITAR DOIS REQUESTS: Campo salvo pelo Java para evitar outra chamada ao banco de dados (dado está na agregação com a outra tabela, Ong)
 	private String nameOng; // Vou usar na tabela para evitar duas requisições (id da linha + nome da Ong)
 	
 	
@@ -50,7 +50,7 @@ public class PetDTO implements Serializable {
 		this.image = petObj.getImage();
 		this.size = petObj.getSize();
 		this.gender = petObj.getGender();
-		this.health = petObj.getHealth().stream().map( i -> i).collect(Collectors.toSet()); // ! REVISAR porque teoricamente seria getId
+		this.health = petObj.getHealth().stream().map( i -> i).collect(Collectors.toSet());
 		this.temperament = petObj.getTemperament();
 		this.nameOng = petObj.getOng().getName();
 	}
