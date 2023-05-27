@@ -1,0 +1,5 @@
+package com.adocao.pet.controllers.exceptions;
+
+public class AdopterController {
+
+}

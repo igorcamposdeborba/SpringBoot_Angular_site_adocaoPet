@@ -1,0 +1,27 @@
+package com.adocao.pet.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.adocao.pet.entities.Adopter;
+import com.adocao.pet.entities.dtos.AdopterDTO;
+import com.adocao.pet.services.AdopterService;
+
+@RestController
+@RequestMapping(value = "/adotante")
+public class AdopterController {
+	
+	@Autowired
+	protected AdopterService adopterService;
+	
+	
+	@PutMapping
+	public ResponseEntity<AdopterDTO> update(@RequestBody AdopterDTO objDTO ){
+		
+		Adopter newObj = adopterService.update(objDTO.getId(), objDTO);
+	} 
+}

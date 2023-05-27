@@ -1,0 +1,5 @@
+package com.adocao.pet.services;
+
+public class AdopterService {
+
+}

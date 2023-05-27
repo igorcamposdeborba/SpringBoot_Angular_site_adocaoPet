@@ -1,0 +1,21 @@
+package com.adocao.pet.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.adocao.pet.entities.Adopter;
+import com.adocao.pet.repositories.AdopterRepository;
+
+@Service // injetar instancias em outras partes do código
+public class AdopterService {
+
+	@Autowired // spring intancia objeto injetando dependência
+	private AdopterRepository adopterRepository;
+	
+	
+	public List<Adopter> findAll() {
+		return adopterRepository.findAll();
+	}
+}

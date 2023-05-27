@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import com.adocao.pet.entities.dtos.AdopterDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Entity;
@@ -26,20 +27,24 @@ public class AdopterPetAssociation implements Serializable { // Serializable par
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	// private List<Instant> dateRequest; // data e hora (classe Date está deprecated em Java. Substituída por Instant porque aceita UTC e GTM)
-	private Instant dateRequest;
+	private Instant dateRequest; // data e hora (classe Date está deprecated em Java. Substituída por Instant porque aceita UTC e GTM)
 	
 	@ManyToOne
     @JoinColumn(name = "pet_id")
     private Pet pet;
     
-	// @JsonIgnore  ! REVISAR SE COLOCO OU NÃO para evitar loop infinito de reflection
+	 // @JsonIgnore  ! REVISAR SE COLOCO OU NÃO para evitar loop infinito de reflection
     @ManyToOne
     @JoinColumn(name = "adopter_id")
     private Adopter adopter;
 	 
 
 	public AdopterPetAssociation() {
+		super();
+		this.dateRequest = Instant.now(); // Ao criar associação do objeto, já adiciona a data atual do pedido de adoção
+	}
+	
+	public AdopterPetAssociation(AdopterDTO adopterDTO) { // ! REVISAR PARA VER SE PRECISA O ADOPTER DTO AQUI NESSE CONSTRUTOR porque faz exatamente o que o construtor de cima faz
 		super();
 		this.dateRequest = Instant.now(); // Ao criar associação do objeto, já adiciona a data atual do pedido de adoção
 	}

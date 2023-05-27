@@ -1582,3 +1582,600 @@
 2023-05-27 09:52:25,394 [Worker-297: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
 2023-05-27 09:52:25,401 [Worker-297: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2023-05-27 09:52:25,402 [Worker-297: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:12:33,801 [Worker-303: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:12:33,834 [Worker-303: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:12:33,836 [Worker-303: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:14:38,380 [Worker-303: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:14:38,412 [Worker-303: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:14:38,414 [Worker-303: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:14:56,836 [Worker-301: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:14:56,846 [Worker-301: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:14:56,847 [Worker-301: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:16:01,889 [Worker-303: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:16:01,896 [Worker-303: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:16:01,897 [Worker-303: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:16:13,709 [Worker-306: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:16:13,718 [Worker-306: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:16:13,719 [Worker-306: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:16:55,516 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:16:55,538 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:16:55,539 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:17:11,527 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:17:11,533 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:17:11,534 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:20:51,276 [Worker-301: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:20:51,283 [Worker-301: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:20:51,284 [Worker-301: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:22:03,765 [Worker-304: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:22:03,772 [Worker-304: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:22:03,773 [Worker-304: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:22:58,873 [Worker-307: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:22:58,879 [Worker-307: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:22:58,881 [Worker-307: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:23:58,577 [Worker-294: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:23:58,583 [Worker-294: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:23:58,584 [Worker-294: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:24:08,931 [Worker-303: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:24:08,937 [Worker-303: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:24:08,939 [Worker-303: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:25:33,212 [Worker-305: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:25:33,218 [Worker-305: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:25:33,219 [Worker-305: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:25:51,292 [Worker-304: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:25:51,299 [Worker-304: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:25:51,300 [Worker-304: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:26:20,196 [Worker-307: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:26:20,204 [Worker-307: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:26:20,205 [Worker-307: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:27:09,350 [Worker-303: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:27:09,356 [Worker-303: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:27:09,357 [Worker-303: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:34:26,933 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:34:26,941 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:34:26,942 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:37:02,556 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:37:02,563 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:37:02,563 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:37:54,906 [Worker-301: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:37:54,914 [Worker-301: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:37:54,915 [Worker-301: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:39:57,235 [Worker-308: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:39:57,243 [Worker-308: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:39:57,244 [Worker-308: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:42:15,875 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:42:15,882 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:42:15,884 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:42:18,038 [Worker-308: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:42:18,045 [Worker-308: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:42:18,047 [Worker-308: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:42:21,541 [Worker-309: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:42:21,547 [Worker-309: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:42:21,548 [Worker-309: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:42:26,681 [Worker-311: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:42:26,686 [Worker-311: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:42:26,687 [Worker-311: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:42:29,170 [Worker-308: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:42:29,177 [Worker-308: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:42:29,177 [Worker-308: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:42:32,122 [Worker-311: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:42:32,129 [Worker-311: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:42:32,130 [Worker-311: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:42:35,424 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:42:35,434 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:42:35,436 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:43:25,747 [Worker-312: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:43:25,766 [Worker-312: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:43:25,767 [Worker-312: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:43:31,332 [Worker-310: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:43:31,340 [Worker-310: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:43:31,341 [Worker-310: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:45:38,229 [Worker-312: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:45:38,240 [Worker-312: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:45:38,242 [Worker-312: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:46:56,317 [Worker-309: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:46:56,324 [Worker-309: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:46:56,325 [Worker-309: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:49:47,409 [Worker-310: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:49:47,433 [Worker-310: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:49:47,434 [Worker-310: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:49:54,272 [Worker-311: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:49:54,280 [Worker-311: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:49:54,282 [Worker-311: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 10:50:58,932 [Worker-312: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 10:50:58,957 [Worker-312: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 10:50:58,958 [Worker-312: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:09:56,794 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:09:56,801 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:09:56,802 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:12:52,103 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:12:52,111 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:12:52,112 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:13:07,219 [Worker-320: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:13:07,227 [Worker-320: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:13:07,229 [Worker-320: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:13:55,382 [Worker-320: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:13:55,392 [Worker-320: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:13:55,393 [Worker-320: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:14:01,045 [Worker-320: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:14:01,055 [Worker-320: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:14:01,057 [Worker-320: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:14:11,698 [Worker-323: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:14:11,705 [Worker-323: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:14:11,706 [Worker-323: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:15:06,211 [Worker-318: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:15:06,218 [Worker-318: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:15:06,219 [Worker-318: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:15:09,997 [Worker-320: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:15:10,002 [Worker-320: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:15:10,003 [Worker-320: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:15:38,672 [Worker-315: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:15:38,701 [Worker-315: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:15:38,702 [Worker-315: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:16:12,117 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:16:12,122 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:16:12,123 [Worker-302: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:16:32,476 [Worker-321: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:16:32,481 [Worker-321: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:16:32,482 [Worker-321: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:16:40,650 [Worker-322: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:16:40,661 [Worker-322: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:16:40,662 [Worker-322: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:21:10,514 [Worker-326: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:21:10,521 [Worker-326: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:21:10,523 [Worker-326: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:21:13,595 [Worker-324: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:21:13,600 [Worker-324: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:21:13,601 [Worker-324: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:26:59,234 [Worker-329: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:26:59,270 [Worker-329: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:26:59,271 [Worker-329: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:27:22,440 [Worker-331: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:27:22,467 [Worker-331: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:27:22,468 [Worker-331: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:27:55,452 [Worker-325: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:27:55,458 [Worker-325: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:27:55,460 [Worker-325: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:29:12,257 [Worker-328: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:29:12,267 [Worker-328: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:29:12,268 [Worker-328: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:31:23,063 [Worker-329: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:31:23,070 [Worker-329: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:31:23,071 [Worker-329: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:37:08,699 [Worker-326: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:37:08,710 [Worker-326: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:37:08,713 [Worker-326: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:38:02,430 [Worker-331: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:38:02,455 [Worker-331: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:38:02,456 [Worker-331: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:38:06,853 [Worker-333: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:38:06,858 [Worker-333: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:38:06,859 [Worker-333: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:38:17,679 [Worker-332: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:38:17,686 [Worker-332: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:38:17,688 [Worker-332: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:41:37,142 [Worker-328: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:41:37,150 [Worker-328: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:41:37,151 [Worker-328: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:41:58,093 [Worker-333: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:41:58,101 [Worker-333: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:41:58,102 [Worker-333: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:42:57,521 [Worker-329: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:42:57,528 [Worker-329: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:42:57,530 [Worker-329: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:46:20,510 [Worker-326: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:46:20,517 [Worker-326: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:46:20,532 [Worker-326: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:46:57,652 [Worker-329: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:46:57,659 [Worker-329: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:46:57,661 [Worker-329: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:47:43,819 [Worker-326: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:47:43,826 [Worker-326: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:47:43,828 [Worker-326: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:48:38,798 [Worker-328: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:48:38,804 [Worker-328: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:48:38,805 [Worker-328: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:50:51,473 [Worker-334: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:50:51,480 [Worker-334: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:50:51,481 [Worker-334: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:51:50,358 [Worker-328: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:51:50,365 [Worker-328: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:51:50,366 [Worker-328: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:57:11,992 [Worker-335: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:57:11,999 [Worker-335: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:57:12,001 [Worker-335: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 11:57:30,061 [Worker-326: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 11:57:30,066 [Worker-326: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 11:57:30,067 [Worker-326: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:01:15,113 [Worker-338: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:01:15,121 [Worker-338: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:01:15,122 [Worker-338: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:01:23,510 [Worker-335: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:01:23,517 [Worker-335: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:01:23,518 [Worker-335: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:02:59,380 [Worker-339: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:02:59,386 [Worker-339: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:02:59,387 [Worker-339: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:04:53,611 [Worker-337: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:04:53,618 [Worker-337: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:04:53,620 [Worker-337: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:08:02,532 [Worker-339: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:08:02,540 [Worker-339: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:08:02,542 [Worker-339: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:08:35,379 [Worker-337: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:08:35,385 [Worker-337: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:08:35,386 [Worker-337: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:13:56,165 [Worker-338: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:13:56,173 [Worker-338: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:13:56,174 [Worker-338: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:14:08,075 [Worker-338: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:14:08,082 [Worker-338: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:14:08,084 [Worker-338: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:14:15,167 [Worker-337: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:14:15,174 [Worker-337: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:14:15,175 [Worker-337: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:16:16,173 [Worker-338: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:16:16,181 [Worker-338: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:16:16,183 [Worker-338: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:16:33,750 [Worker-335: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:16:33,756 [Worker-335: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:16:33,757 [Worker-335: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:43:25,552 [Worker-344: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:43:25,582 [Worker-344: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:43:25,583 [Worker-344: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:44:41,938 [Worker-337: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:44:41,970 [Worker-337: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:44:41,971 [Worker-337: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:44:51,785 [Worker-341: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:44:51,793 [Worker-341: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:44:51,795 [Worker-341: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:45:29,331 [Worker-344: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:45:29,338 [Worker-344: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:45:29,339 [Worker-344: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:45:42,186 [Worker-345: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:45:42,215 [Worker-345: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:45:42,216 [Worker-345: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:45:55,724 [Worker-343: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:45:55,730 [Worker-343: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:45:55,732 [Worker-343: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:46:31,894 [Worker-345: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:46:31,900 [Worker-345: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:46:31,901 [Worker-345: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:47:11,107 [Worker-345: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:47:11,114 [Worker-345: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:47:11,116 [Worker-345: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:48:41,377 [Worker-343: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:48:41,384 [Worker-343: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:48:41,385 [Worker-343: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 12:59:49,882 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 12:59:49,889 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 12:59:49,890 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:00:21,640 [Worker-341: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:00:21,647 [Worker-341: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:00:21,648 [Worker-341: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:00:56,362 [Worker-347: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:00:56,369 [Worker-347: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:00:56,370 [Worker-347: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:01:03,111 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:01:03,117 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:01:03,118 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:01:07,060 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:01:07,067 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:01:07,069 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:01:11,120 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:01:11,126 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:01:11,127 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:01:17,341 [Worker-348: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:01:17,348 [Worker-348: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:01:17,349 [Worker-348: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:03:09,440 [Worker-342: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:03:09,448 [Worker-342: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:03:09,449 [Worker-342: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:05:29,071 [Worker-348: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:05:29,077 [Worker-348: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:05:29,079 [Worker-348: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:05:32,715 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:05:32,721 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:05:32,723 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:05:43,908 [Worker-342: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:05:43,914 [Worker-342: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:05:43,915 [Worker-342: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:05:48,271 [Worker-347: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:05:48,281 [Worker-347: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:05:48,282 [Worker-347: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:08:36,205 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:08:36,212 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:08:36,213 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:09:15,226 [Worker-341: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:09:15,233 [Worker-341: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:09:15,234 [Worker-341: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:09:39,572 [Worker-346: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:09:39,582 [Worker-346: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:09:39,583 [Worker-346: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:11:52,568 [Worker-346: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:11:52,578 [Worker-346: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:11:52,579 [Worker-346: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:13:06,335 [Worker-351: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:13:06,340 [Worker-351: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:13:06,341 [Worker-351: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:15:20,645 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:15:20,654 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:15:20,655 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:15:51,018 [Worker-351: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:15:51,024 [Worker-351: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:15:51,025 [Worker-351: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:16:35,459 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:16:35,467 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:16:35,467 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:16:59,286 [Worker-347: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:16:59,292 [Worker-347: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:16:59,293 [Worker-347: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:17:17,612 [Worker-347: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:17:17,618 [Worker-347: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:17:17,619 [Worker-347: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:18:17,534 [Worker-348: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:18:17,540 [Worker-348: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:18:17,541 [Worker-348: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:26:09,529 [Worker-342: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:26:09,551 [Worker-342: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:26:09,553 [Worker-342: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:26:12,533 [Worker-341: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:26:12,541 [Worker-341: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:26:12,542 [Worker-341: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:26:13,621 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:26:13,628 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:26:13,629 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:26:27,977 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:26:28,017 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:26:28,018 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:27:20,110 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:27:20,117 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:27:20,119 [Worker-349: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:28:47,705 [Worker-348: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:28:47,712 [Worker-348: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:28:47,713 [Worker-348: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:29:23,351 [Worker-351: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:29:23,385 [Worker-351: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:29:23,387 [Worker-351: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:29:42,574 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:29:42,579 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:29:42,581 [Worker-350: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:30:35,207 [Worker-351: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:30:35,214 [Worker-351: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:30:35,214 [Worker-351: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:30:43,463 [Worker-342: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:30:43,475 [Worker-342: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:30:43,476 [Worker-342: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:31:29,453 [Worker-346: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:31:29,476 [Worker-346: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:31:29,478 [Worker-346: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:31:55,016 [Worker-351: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:31:55,023 [Worker-351: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:31:55,024 [Worker-351: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:34:11,771 [Worker-352: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:34:11,788 [Worker-352: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:34:11,790 [Worker-352: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:40:56,548 [Worker-358: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:40:56,555 [Worker-358: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:40:56,557 [Worker-358: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:46:49,379 [Worker-362: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:46:49,388 [Worker-362: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:46:49,390 [Worker-362: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:48:19,736 [Worker-361: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:48:19,742 [Worker-361: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:48:19,744 [Worker-361: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:49:47,903 [Worker-361: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:49:47,934 [Worker-361: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:49:47,934 [Worker-361: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:50:43,948 [Worker-361: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:50:43,954 [Worker-361: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:50:43,955 [Worker-361: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:53:07,398 [Worker-367: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:53:07,405 [Worker-367: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:53:07,406 [Worker-367: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:53:08,580 [Worker-363: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:53:08,615 [Worker-363: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:53:08,640 [Worker-363: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:53:28,706 [Worker-369: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:53:28,713 [Worker-369: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:53:28,714 [Worker-369: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:53:39,793 [Worker-368: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:53:39,799 [Worker-368: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:53:39,800 [Worker-368: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:57:09,948 [Worker-368: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:57:09,979 [Worker-368: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:57:09,980 [Worker-368: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:57:57,829 [Worker-373: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:57:57,865 [Worker-373: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:57:57,866 [Worker-373: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:58:34,956 [Worker-368: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:58:34,974 [Worker-368: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:58:34,975 [Worker-368: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 13:59:51,420 [Worker-363: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 13:59:51,429 [Worker-363: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 13:59:51,431 [Worker-363: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:00:18,642 [Worker-368: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:00:18,651 [Worker-368: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:00:18,653 [Worker-368: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:01:04,239 [Worker-372: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:01:04,246 [Worker-372: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:01:04,247 [Worker-372: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:02:54,604 [Worker-370: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:02:54,611 [Worker-370: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:02:54,613 [Worker-370: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:03:04,933 [Worker-374: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:03:04,937 [Worker-374: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:03:04,938 [Worker-374: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:03:13,060 [Worker-373: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:03:13,066 [Worker-373: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:03:13,067 [Worker-373: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:03:39,298 [Worker-363: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:03:39,304 [Worker-363: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:03:39,305 [Worker-363: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:03:48,269 [Worker-373: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:03:48,275 [Worker-373: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:03:48,276 [Worker-373: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:03:54,328 [Worker-372: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:03:54,333 [Worker-372: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:03:54,334 [Worker-372: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:04:11,293 [Worker-375: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:04:11,298 [Worker-375: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:04:11,299 [Worker-375: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:05:50,521 [Worker-370: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:05:50,528 [Worker-370: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:05:50,529 [Worker-370: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:06:24,891 [Worker-375: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:06:24,920 [Worker-375: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:06:24,921 [Worker-375: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:06:33,846 [Worker-370: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:06:33,854 [Worker-370: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:06:33,856 [Worker-370: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:08:07,987 [Worker-370: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:08:07,995 [Worker-370: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:08:07,996 [Worker-370: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:08:34,424 [Worker-363: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:08:34,430 [Worker-363: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:08:34,431 [Worker-363: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:08:37,517 [Worker-372: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:08:37,523 [Worker-372: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:08:37,525 [Worker-372: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:08:57,276 [Worker-372: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:08:57,283 [Worker-372: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:08:57,284 [Worker-372: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:16:09,627 [Worker-377: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:16:09,670 [Worker-377: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:16:09,672 [Worker-377: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:17:16,989 [Worker-378: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:17:17,025 [Worker-378: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:17:17,026 [Worker-378: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:17:33,040 [Worker-371: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:17:33,060 [Worker-371: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:17:33,061 [Worker-371: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:18:00,789 [Worker-379: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:18:00,812 [Worker-379: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:18:00,813 [Worker-379: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:19:49,555 [Worker-378: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:19:49,563 [Worker-378: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:19:49,564 [Worker-378: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:20:01,570 [Worker-377: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:20:01,593 [Worker-377: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:20:01,594 [Worker-377: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:21:22,260 [Worker-371: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:21:22,266 [Worker-371: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:21:22,267 [Worker-371: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:21:29,647 [Worker-377: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:21:29,653 [Worker-377: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:21:29,654 [Worker-377: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:24:59,621 [Worker-380: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:24:59,629 [Worker-380: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:24:59,631 [Worker-380: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:25:28,722 [Worker-377: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:25:28,729 [Worker-377: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:25:28,730 [Worker-377: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:26:43,277 [Worker-370: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:26:43,283 [Worker-370: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:26:43,284 [Worker-370: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:31:34,165 [Worker-379: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:31:34,173 [Worker-379: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:31:34,174 [Worker-379: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:31:39,735 [Worker-386: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:31:39,741 [Worker-386: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:31:39,742 [Worker-386: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:31:49,059 [Worker-378: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:31:49,067 [Worker-378: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:31:49,068 [Worker-378: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:34:45,159 [Worker-379: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:34:45,166 [Worker-379: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:34:45,167 [Worker-379: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:35:59,435 [Worker-386: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:35:59,442 [Worker-386: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:35:59,443 [Worker-386: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:36:52,063 [Worker-388: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:36:52,068 [Worker-388: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:36:52,069 [Worker-388: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:38:35,725 [Worker-386: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:38:35,732 [Worker-386: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:38:35,733 [Worker-386: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:40:24,767 [Worker-386: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:40:24,773 [Worker-386: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:40:24,774 [Worker-386: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:43:21,445 [Worker-389: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:43:21,453 [Worker-389: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:43:21,455 [Worker-389: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:43:46,535 [Worker-390: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:43:46,541 [Worker-390: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:43:46,542 [Worker-390: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:43:47,628 [Worker-392: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:43:47,634 [Worker-392: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:43:47,635 [Worker-392: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:45:44,741 [Worker-389: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:45:44,748 [Worker-389: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:45:44,749 [Worker-389: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:45:49,501 [Worker-377: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:45:49,524 [Worker-377: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:45:49,525 [Worker-377: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:51:34,246 [Worker-395: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:51:34,255 [Worker-395: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:51:34,255 [Worker-395: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:51:38,567 [Worker-397: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:51:38,574 [Worker-397: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:51:38,575 [Worker-397: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 14:59:32,276 [Worker-401: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 14:59:32,284 [Worker-401: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 14:59:32,285 [Worker-401: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:00:49,704 [Worker-401: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:00:49,712 [Worker-401: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:00:49,713 [Worker-401: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:02:19,812 [Worker-396: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:02:19,819 [Worker-396: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:02:19,820 [Worker-396: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:07:43,422 [Worker-395: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:07:43,430 [Worker-395: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:07:43,431 [Worker-395: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:08:44,687 [Worker-406: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:08:44,696 [Worker-406: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:08:44,697 [Worker-406: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:09:30,151 [Worker-407: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:09:30,159 [Worker-407: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:09:30,160 [Worker-407: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:09:33,692 [Worker-406: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:09:33,699 [Worker-406: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:09:33,701 [Worker-406: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:09:59,761 [Worker-405: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:09:59,797 [Worker-405: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:09:59,798 [Worker-405: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:10:32,377 [Worker-408: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:10:32,385 [Worker-408: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:10:32,387 [Worker-408: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:11:07,188 [Worker-407: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:11:07,196 [Worker-407: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:11:07,198 [Worker-407: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:11:54,639 [Worker-404: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:11:54,645 [Worker-404: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:11:54,647 [Worker-404: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:12:27,371 [Worker-403: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:12:27,378 [Worker-403: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:12:27,379 [Worker-403: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:13:41,572 [Worker-406: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:13:41,581 [Worker-406: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:13:41,581 [Worker-406: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:14:00,734 [Worker-395: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:14:00,740 [Worker-395: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:14:00,742 [Worker-395: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:14:20,683 [Worker-408: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:14:20,689 [Worker-408: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:14:20,690 [Worker-408: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:14:53,648 [Worker-406: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:14:53,654 [Worker-406: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:14:53,670 [Worker-406: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:17:23,240 [Worker-403: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:17:23,247 [Worker-403: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:17:23,248 [Worker-403: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:17:53,422 [Worker-406: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:17:53,429 [Worker-406: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:17:53,430 [Worker-406: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:18:23,332 [Worker-403: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:18:23,338 [Worker-403: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:18:23,339 [Worker-403: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources
+2023-05-27 15:20:49,749 [Worker-410: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-05-27 15:20:49,755 [Worker-410: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-05-27 15:20:49,756 [Worker-410: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Exercicios\DesenvolvimentoWeb\trabalho\adocaoPet\backend\adocaoPet\src\test\resources

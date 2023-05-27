@@ -1,0 +1,104 @@
+package com.adocao.pet.services;
+
+import java.lang.instrument.IllegalClassFormatException;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.adocao.pet.entities.Adopter;
+import com.adocao.pet.entities.dtos.AdopterDTO;
+import com.adocao.pet.repositories.AdopterRepository;
+import com.adocao.pet.services.exceptions.DataIntegrityViolationException;
+import com.adocao.pet.services.exceptions.IllegalFormatException;
+
+@Service // injetar instancias em outras partes do código
+public class AdopterService {
+
+	@Autowired // spring intancia objeto injetando dependência
+	private AdopterRepository adopterRepository;
+	
+	
+	public List<Adopter> findAll() {
+		return adopterRepository.findAll();
+	}
+	
+	public Adopter create(AdopterDTO adopterDTO) {
+		adopterDTO.setId(null); // Validação: garantir que o objDTO do parâmetro que estou adicionando não tenha id (evita alterar outro registro se tiver id na requisição)
+		
+		// Validações de email, telefone e nome:
+		validateEmail(adopterDTO);
+		validateTelephone(adopterDTO);
+		validateIsPresentName(adopterDTO);
+		
+	}
+	
+	
+	// Validação obrigatória
+	private void validateEmail(AdopterDTO adopterDTO) {
+		Optional<Adopter> objAdopter = this.adopterRepository.findByEmail(adopterDTO.getEmail()); // Buscar e-mail no repository no banco de dados
+		
+		if (objAdopter.isPresent() && objAdopter.get().getId() != adopterDTO.getId()) { // Exception: validar se objeto do parâmetro tem outro id que o do repository, então já existe no banco
+			throw new DataIntegrityViolationException("E-mail já cadastrado no sistema");
+		}
+	}
+	
+	
+	// Validações facultativas/'redundantes' por segurança no back-end (front já valida isso no html) para não persistir errado no banco de dados caso alguém altere o html
+	
+	private void validateIsPresentName(AdopterDTO adopterDTO) {
+		
+		if (adopterDTO.getName() == null) { // Validar se existe o nome do adotante no parâmetro para a requisição
+			throw new com.adocao.pet.services.exceptions.NullPointerException("O campo NOME é obrigatório");
+		}
+	}
+	
+	// Validar o valor (formatação) do telefone. Admite repetição de telefone no banco de dados porque duas pessoas podem ter o mesmo telefone residencial ou celular
+	private void validateTelephone(AdopterDTO adopterDTO) {
+		
+		if (adopterDTO.getTelephone().matches("((\\+?\\d+ ?)?\\(?[0-9]{2}\\)?\\s?[0-9]{4,5}(-?|\\.?)[0-9]{3,4})|([0-9]{11})|([0-9]{2}\\s?[0-9]{8,9})") == false) { // Regex validate telephone's value.   ((\+?\d+ ?)?\(?[0-9]{2}\)?\s?[0-9]{4,5}(-?|\.?)[0-9]{3,4})|([0-9]{11})|([0-9]{2}\s?[0-9]{8,9})
+			throw new IllegalFormatException("Formato errado de Telefone. Exemplo: 55 48 981784550");
+		}
+	}
+	/* Casos de uso de telefone válido
+	+55 51 98175.4550
+	+55 5198175.4550
+	+55 51 3075.4448
+	+55 513075.4448
+	+55 51 98175-4550
+	+55 5198175-4550
+	+55 51 3075-4448
+	+55 513075-4448
+	+5551 98175.4550
+	+555198175.4550
+	+5551 3075.4448
+	+55513075.4448
+	+5551 98175-4550
+	+555198175-4550
+	+5551 3075-4448
+	+55513075-4448
+	55 48 981784550
+	+55 (51) 98175.4550
+	+55 (51)98175.4550
+	+55 (51) 3075.4448
+	+55 (51)3075.4448
+	+55 (51) 98175-4550
+	+55 (51)98175-4550
+	+55 (51) 3075-4448
+	+55 (51)3075-4448
+	(51) 98175.4550
+	(51)98175.4550
+	(51) 3075.4448
+	(51)3075.4448
+	(51) 98175-4550
+	(51)98175-4550
+	(51) 3075-4448
+	(51)3075-4448
+	51 981754550
+	51 30754448
+	51981754550
+	5130754448
+	*/
+	
+}

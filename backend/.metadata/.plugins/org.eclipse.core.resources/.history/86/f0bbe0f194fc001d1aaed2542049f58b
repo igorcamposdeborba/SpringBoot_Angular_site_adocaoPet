@@ -1,0 +1,40 @@
+package com.adocao.pet.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.adocao.pet.entities.Adopter;
+import com.adocao.pet.entities.dtos.AdopterDTO;
+import com.adocao.pet.repositories.AdopterRepository;
+
+@Service // injetar instancias em outras partes do código
+public class AdopterService {
+
+	@Autowired // spring intancia objeto injetando dependência
+	private AdopterRepository adopterRepository;
+	
+	
+	public List<Adopter> findAll() {
+		return adopterRepository.findAll();
+	}
+	
+	public Adopter create(AdopterDTO adopterDTO) {
+		adopterDTO.setId(null); // Validação: garantir que o objDTO do parâmetro que estou adicionando não tenha id (evita alterar outro registro se tiver id na requisição)
+	}
+	
+	// Validações obrigatórias
+	private void validateEmail(AdopterDTO adopterDTO) {
+		
+		Optional<Adopter> objAdopter = this.adopterRepository.findByEmail(adopterDTO.getEmail()); // Buscar e-mail no repository no banco de dados
+		if (objAdopter.isPresent() && objAdopter.get().getId() != adopterDTO.getId()) {
+			
+		}
+	}
+	
+	// Validações facultativas/'redundantes' por segurança no back-end (front já valida isso no html) para não persistir errado no banco de dados caso alguém altere o html
+	
+	
+}

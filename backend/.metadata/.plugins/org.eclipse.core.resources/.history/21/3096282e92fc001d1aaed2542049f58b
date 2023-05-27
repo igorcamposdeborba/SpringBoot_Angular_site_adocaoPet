@@ -1,0 +1,12 @@
+package com.adocao.pet.controllers;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping(value = "/adotante")
+public class AdopterController {
+	
+	@Autowired
+	protected AdopterService;
+}

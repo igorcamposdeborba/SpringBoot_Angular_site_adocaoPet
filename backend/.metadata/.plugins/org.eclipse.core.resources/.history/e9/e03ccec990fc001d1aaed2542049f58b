@@ -1,0 +1,21 @@
+package com.adocao.pet.entities.dtos;
+
+import java.io.Serializable;
+
+import jakarta.validation.constraints.NotNull;
+
+public class AdopterDTO implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
+	protected Integer id;
+	@NotNull(message = "Campo NOME é obrigatório")
+	protected String name;
+	@NotNull(message = "Campo EMAIL é obrigatório")
+	protected String email;
+	@NotNull(message = "Campo TELEFONE é obrigatório")
+	protected String telephone;
+	
+	
+	
+	
+}

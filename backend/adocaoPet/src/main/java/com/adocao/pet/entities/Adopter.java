@@ -2,10 +2,12 @@ package com.adocao.pet.entities;
 
 import java.io.Serializable;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
+import com.adocao.pet.entities.dtos.AdopterDTO;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -22,6 +24,7 @@ public class Adopter implements Serializable {
 	private Integer id;
 	@NotNull
 	private String name;
+	// @Column(unique = true) // Banco de dados não aceita valores repetidos em diferentes linhas/registro de e-mail
 	@NotNull
 	private String email;
 	@NotNull
@@ -46,6 +49,15 @@ public class Adopter implements Serializable {
 															   // aqui recebe a data e hora do request para cadastrar na lista
 	}
 	
+	// CONVERTE ADOPTER DTO para ADOPTER: usado no AdopterService
+	public Adopter(AdopterDTO adopterDTO) {
+		super();
+		this.id = adopterDTO.getId();
+		this.name = adopterDTO.getName();
+		this.email = adopterDTO.getEmail();
+		this.telephone = adopterDTO.getTelephone();
+	}
+	
 	
 	// Métodos de acesso
 	public Integer getId() {
@@ -61,6 +73,9 @@ public class Adopter implements Serializable {
 		return telephone;
 	}
 	
+	public void setId(Integer id) { // Coloquei set Id porque posso receber várias requisições POST para atualizar os atributos baseado no Id (lógica no service)
+		this.id = id;
+	}
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -74,7 +89,7 @@ public class Adopter implements Serializable {
 	public Set<AdopterPetAssociation> getAllDateRequestAdotation(){
 		return adopterPetAssociation;
 	}
-
+	
 	public void createDateRequestAdotation() {
 		this.adopterPetAssociation.add(new AdopterPetAssociation());
 	}

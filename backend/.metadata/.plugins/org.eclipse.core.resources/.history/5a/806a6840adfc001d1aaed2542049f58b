@@ -1,0 +1,89 @@
+package com.adocao.pet.entities;
+
+import java.io.Serializable;
+import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+
+import com.adocao.pet.entities.dtos.AdopterDTO;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+
+// Classe associativa que registra a lista de pedidos por data e hora de um Adopter para um Pet.
+// Cada requisição é um Objeto/registro da tabela diferente. Por isso não implemento uma lista.
+
+@Entity
+public class AdopterPetAssociation implements Serializable { // Serializable para trafegar em rede por bytes
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	
+	private Instant dateRequest; // data e hora (classe Date está deprecated em Java. Substituída por Instant porque aceita UTC e GTM)
+	
+	@ManyToOne
+    @JoinColumn(name = "pet_id")
+    private Pet pet;
+    
+	// @JsonIgnore  ! REVISAR SE COLOCO OU NÃO para evitar loop infinito de reflection
+    @ManyToOne
+    @JoinColumn(name = "adopter_id")
+    private Adopter adopter;
+	 
+
+	public AdopterPetAssociation() {
+		super();
+		this.dateRequest = Instant.now(); // Ao criar associação do objeto, já adiciona a data atual do pedido de adoção
+	}
+	
+	public AdopterPetAssociation(AdopterDTO adopterDTO) { // ! REVISAR PARA VER SE PRECISA O ADOPTER DTO AQUI NESSE CONSTRUTOR porque faz exatamente o que o construtor de cima faz
+		super();
+		this.dateRequest = Instant.now(); // Ao criar associação do objeto, já adiciona a data atual do pedido de adoção
+	}
+	
+
+	public Instant getDateRequest() {
+		return dateRequest;
+	}
+	public void addDateRequest(Instant dateRequest) {
+		this.dateRequest = dateRequest;
+	}
+	public Integer getId() {
+		return id;
+	}
+	// Nota: Não implementado setId porque não vou alterar nenhum id e nem dar update. Se tivesse que dar update, daí sim eu teria que colocar o setId no SpringBoot, mesmo não alterando o id porque PUT é uma operação idempotente e por baixo ele realmente atualiza o id no Update
+
+	public Adopter getAdopter(){
+		return adopter;
+	}
+	public Pet getPet(){
+		return pet;
+	}
+	
+	// Hashcode e Equals: para poder adicionar valores comparando os valores dos objetos da lista List<Adopter> e List<Pet> pet
+	@Override
+	public int hashCode() {
+		return Objects.hash(pet);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		AdopterPetAssociation other = (AdopterPetAssociation) obj;
+		return Objects.equals(pet, other.pet);
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.adocao.pet.services;
+
+import org.springframework.stereotype.Service;
+
+@Service // injetar instancias em outras partes do código
+public class AdopterService {
+
+}
