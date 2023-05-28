@@ -1,0 +1,54 @@
+package com.adocao.pet.entities.dtos;
+
+import java.io.Serializable;
+import java.time.Instant;
+import java.util.stream.Collectors;
+
+import com.adocao.pet.entities.Adopter;
+import com.adocao.pet.entities.AdopterPetAssociation;
+import com.adocao.pet.entities.Pet;
+
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
+
+public class AdopterPetAssociationDTO implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
+	private Integer id;
+	private Instant dateRequest;
+	
+	// COMPOSIÇÃO: para relacionamento
+	@OneToOne (optional = true, mappedBy = "pet") // optional: aceita null no relacionamento (que nesse caso é 0=null ou 1)
+	protected Pet pet;
+	@OneToMany (mappedBy = "adopter")
+	protected Adopter adopter;
+	
+	
+	public AdopterPetAssociationDTO() {
+		super();
+	}
+	
+	public AdopterPetAssociationDTO(AdopterPetAssociation adopterPetAssociation) {
+		super();
+		this.id = adopterPetAssociation.getId();
+		this.dateRequest = Instant.now(); // Ao criar associação do objeto, já adiciona a data atual do pedido de adoção
+	}
+	
+	
+	public Integer getId() {
+		return id;
+	}
+	public Instant getDateRequest() {
+		return dateRequest;
+	}
+	
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public void setDateRequest(Instant dateRequest) {
+		dateRequest = dateRequest;
+	}
+	
+	// ! REVISAR: ver se precisa implementar os métodos de acesso da composição
+	
+}

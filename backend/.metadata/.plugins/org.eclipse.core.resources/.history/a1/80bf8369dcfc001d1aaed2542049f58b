@@ -1,0 +1,65 @@
+package com.adocao.pet.services;
+
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.adocao.pet.entities.Adopter;
+import com.adocao.pet.entities.AdopterPetAssociation;
+import com.adocao.pet.entities.Ong;
+import com.adocao.pet.entities.Pet;
+import com.adocao.pet.entities.enums.Gender;
+import com.adocao.pet.entities.enums.Health;
+import com.adocao.pet.entities.enums.Size;
+import com.adocao.pet.repositories.AdopterPetAssociationRepository;
+import com.adocao.pet.repositories.AdopterRepository;
+import com.adocao.pet.repositories.OngRepository;
+import com.adocao.pet.repositories.PetRepository;
+
+@Service // injetar instancias em outras partes do código
+public class DBService {
+
+	@Autowired // spring intancia objeto injetando dependência
+	private PetRepository petRepository;
+	@Autowired
+	private OngRepository ongRepository;
+	@Autowired
+	private AdopterRepository adopterRepository;
+	@Autowired
+	private AdopterPetAssociationRepository adopterPetRepository;
+	
+	
+	public void instantiateDataBase() {
+		// Definir atributos
+		Set<Health> healthPet1 = new HashSet<>();
+		healthPet1.add(Health.CASTRADO);
+		healthPet1.add(Health.VERMIFUGADO);
+		
+		Set<Health> healthPet2 = new HashSet<>();
+		healthPet2.add(Health.VACINADO);
+		
+		// Instanciar objetos para pré-popular o banco de dados
+		Ong ong1 = new Ong(null, "Adote POA", "adotepoa@hotmail.com", "(51) 981789290", "www.instagram.com/adotepoa", "Carla da Silva");
+		Pet pet1 = new Pet(null, "Rex", "rex1.jpg", Size.M, Gender.MACHO, healthPet1, 4,  "Dócil e ativo", ong1);
+		Pet pet2 = new Pet(null, "Flora", "flora1.jpg", Size.P, Gender.FEMEA, healthPet2, 0, "Ativa", ong1);
+		
+		AdopterPetAssociation adopterPet1 = new AdopterPetAssociation();
+		AdopterPetAssociation adopterPet2 = new AdopterPetAssociation();
+		Adopter adopter1 = new Adopter(null, "Daniela da Silva", "daniela@yahoo.com.br", "55 51 981547895");
+		Adopter adopter2 = new Adopter(null, "Bruno dos Santos", "bruno@hotmail.com", "55 14 34159768");
+		
+		
+		ongRepository.saveAll(Arrays.asList(ong1));
+		petRepository.saveAll(Arrays.asList(pet1, pet2));
+		
+	}
+	
+	
+	
+	
+	
+}

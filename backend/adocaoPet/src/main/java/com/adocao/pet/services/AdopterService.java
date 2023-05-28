@@ -1,5 +1,6 @@
 package com.adocao.pet.services;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -7,8 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.adocao.pet.entities.Adopter;
+import com.adocao.pet.entities.AdopterPetAssociation;
+import com.adocao.pet.entities.Pet;
 import com.adocao.pet.entities.dtos.AdopterDTO;
+import com.adocao.pet.entities.dtos.PetDTO;
+import com.adocao.pet.repositories.AdopterPetAssociationRepository;
 import com.adocao.pet.repositories.AdopterRepository;
+import com.adocao.pet.repositories.PetRepository;
 import com.adocao.pet.services.exceptions.IllegalFormatException;
 import com.adocao.pet.services.exceptions.ObjectNotFoundException;
 
@@ -19,6 +25,10 @@ public class AdopterService {
 
 	@Autowired // spring intancia objeto injetando dependência
 	private AdopterRepository adopterRepository;
+	@Autowired
+	private AdopterPetAssociationRepository adopterPetAssociationRepository;
+	@Autowired 
+	private PetRepository petRepository;
 	
 	
 	public List<Adopter> findAll() {
@@ -37,48 +47,98 @@ public class AdopterService {
 		return adopter.orElse(null);
 	}
 	
-	// !! REVISAR ( todo ) ver se devo implementar no AdopterDTO e aqui o relacionamento com AdopterPetAssociation E ao invés do AdopterPetAssociation salvar uma nova linha, ele atualiza o e-mail daquele usuário se já existe o e-mail para aquele Pet no banco de dados
+	// !! REVISAR ver se devo implementar no AdopterDTO e aqui o relacionamento com AdopterPetAssociation E ao invés do AdopterPetAssociation salvar uma nova linha, ele atualiza o e-mail daquele usuário se já existe o e-mail para aquele Pet no banco de dados
 	// ADICIONA recurso no banco de dados
-	public Adopter create(AdopterDTO adopterDTO) { // ! alterar para receber o ID do Pet
-		
+	public Adopter create(Integer idPet, @Valid AdopterDTO adopterDTO) {
 		// UPDATE: Validar se já existe o adopter no banco de dados pelo e-mail, se sim, só atualizar os dados que o adopter enviou.
 		Optional<Adopter> varAdopterOnDatabase = adopterRepository.findByEmail(adopterDTO.getEmail());
 		
 		if (adopterDTO != null && varAdopterOnDatabase.isPresent() && adopterDTO.getEmail().equalsIgnoreCase(varAdopterOnDatabase.get().getEmail())) { // verificar se existe o cadastro daquele e-mail
-				return update(adopterDTO); // ATUALIZAR cadastro
+				return update(idPet, adopterDTO); // ATUALIZAR cadastro
 				
 		} else {
 			Adopter varNewAdopter = new Adopter(adopterDTO); // CONVERTER DTO para Adopter
-				
+			
+			// Converter DTO para Objeto e atribuir Objetos
+			AdopterPetAssociation adopterPetAssociation = new AdopterPetAssociation(); // criar data e hora do request
+			adopterPetAssociation.setAdopter(varNewAdopter);
+			// Buscar no banco de dados
+			Optional<Pet> varPet = petRepository.findById(idPet);
+			adopterPetAssociation.setPet(varPet.get());
+			// adopterPetAssociationRepository.save(adopterPetAssociation); // CREATE: salvar a classe associativa no banco de dados // ! CORRIGIR: PRIMEIRO SALVA RO OBJETO ADOPTER, DEPOIS A CLASSE ASSOCIATIVA
+			
 			return adopterRepository.save(varNewAdopter); // ADICIONAR cadastro: salvar no banco de dados pelo Repository	
-		}
+		} 
 	}
 	
 	// EDITA ou ADICIONA recurso no banco de dados: porque tenho só um botão para enviar o formulário
-	public Adopter update(@Valid AdopterDTO adopterDTO) {
-		
-		// Encontrar pelo id e validar exceptions
+	public Adopter update(Integer idPet, @Valid AdopterDTO adopterDTO) {
+		// Encontrar Adopter pelo email e validar exceptions
 		Adopter newAdopter = findByEmail(adopterDTO.getEmail());
 		Optional<Adopter> oldAdopter = adopterRepository.findByEmail(adopterDTO.getEmail());
 		validateEmail(adopterDTO);
 		validateIsPresentName(adopterDTO);
 		validateTelephone(adopterDTO);
 		
+		// EDITAR
 		if (oldAdopter.isPresent()) {
 			Adopter editedAdopter = oldAdopter.get(); // Get(): retornar o objeto inteiro da classe
 			editedAdopter.setName(adopterDTO.getName()); // Editar atributos
 			editedAdopter.setTelephone(adopterDTO.getTelephone());
 			
-			return adopterRepository.save(editedAdopter); 
+			return adopterRepository.save(editedAdopter);
 		}
 		
-		// Criar objeto que vou adicionar no banco de dados
+		// ADICIONAR: Criar objeto que vou adicionar no banco de dados		
 		adopterDTO.setId(null); // Validação: garantir que o objDTO do parâmetro que estou adicionando não tenha id (evita alterar outro registro se tiver id na requisição)
-		newAdopter = new Adopter(adopterDTO);
+		newAdopter = new Adopter(adopterDTO);		
 		
-		return adopterRepository.save(newAdopter); // UPDATE: atualizar no banco de dados
+		return adopterRepository.save(newAdopter); // CREATE: salvar no banco de dados
 	}
+	
+	public AdopterPetAssociation addPetAdopter(Integer idPet, Adopter adopterObj) {
+		// Buscar no banco de dados
+		Optional<Pet> varPet = petRepository.findById(idPet);
+		
+		// Converter DTO para Objeto e atribuir Objetos
+		AdopterPetAssociation adopterPetAssociation = new AdopterPetAssociation(); // criar data e hora do request
+		adopterPetAssociation.setAdopter(adopterObj); // atribuir objeto Adopter
+		
+		PetDTO petDTO = new PetDTO(varPet.get()); // ! REVISAR SE CRIO MESMO O DTO OU SE COLOCO DIRETO NO OBJETO
+		Pet petObj = null;
+		if (varPet.isPresent()) {
+			petObj = varPet.orElse(null);
+		}
+		adopterPetAssociation.setPet(petObj); // atribuir objeto Pet
 
+		// Atribuir objetos Adopter e Pet na classe associativa
+		// AdopterPetAssociation adopterPet = new AdopterPetAssociation();
+			
+		// adopterPet.setAdopter(new Adopter(adopterDTO));
+		// adopterPet.setPet(petObj); 
+
+		return adopterPetAssociationRepository.save(adopterPetAssociation); // Salvar no banco de dados a classe de associação
+	}
+	
+	/*public AdopterPetAssociation addPetAdopter(Integer idPet, AdopterDTO adopterDTO) {
+		// Buscar no banco de dados
+		Optional<Pet> varPet = petRepository.findById(idPet);
+
+		// Converter DTO para Objeto
+		PetDTO petDTO = new PetDTO(varPet.get());
+		Pet petObj = null;
+		if (varPet.isPresent()) {
+			petObj = varPet.orElse(null);
+		}
+
+		// Atribuir objetos Adopter e Pet na classe associativa
+		AdopterPetAssociation adopterPet = new AdopterPetAssociation();
+			
+		adopterPet.setAdopter(new Adopter(adopterDTO));
+		adopterPet.setPet(petObj); 
+
+		return adopterPetAssociationRepository.save(adopterPet); // Salvar no banco de dados a classe de associação
+	}*/
 
 	
 	// VALIDAÇÃO Obrigatória

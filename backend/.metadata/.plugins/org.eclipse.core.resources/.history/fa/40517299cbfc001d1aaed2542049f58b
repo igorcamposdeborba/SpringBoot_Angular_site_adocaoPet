@@ -1,0 +1,12 @@
+package com.adocao.pet.entities.dtos;
+
+import java.io.Serializable;
+import java.time.Instant;
+
+public class AdopterPetAssociationDTO implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
+	private Integer id;
+	private Instant dateRequest;
+
+}

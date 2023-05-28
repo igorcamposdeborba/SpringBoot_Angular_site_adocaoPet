@@ -1,13 +1,17 @@
 package com.adocao.pet.services;
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.adocao.pet.entities.Adopter;
+import com.adocao.pet.entities.AdopterPetAssociation;
 import com.adocao.pet.entities.Ong;
 import com.adocao.pet.entities.Pet;
 import com.adocao.pet.entities.enums.Gender;
@@ -32,7 +36,7 @@ public class DBService {
 	
 	
 	public void instantiateDataBase() {
-		// Definir atributos
+		// Definir atributos	
 		Set<Health> healthPet1 = new HashSet<>();
 		healthPet1.add(Health.CASTRADO);
 		healthPet1.add(Health.VERMIFUGADO);
@@ -40,15 +44,44 @@ public class DBService {
 		Set<Health> healthPet2 = new HashSet<>();
 		healthPet2.add(Health.VACINADO);
 		
+		Set<Health> healthPet3 = new HashSet<>();
+		healthPet3.add(Health.CASTRADO);
+		
+		Set<Health> healthPet4 = new HashSet<>();
+		healthPet4.add(Health.VERMIFUGADO);
+		
 		// Instanciar objetos para pré-popular o banco de dados
-		// Integer id, String name, String email, String telephone, String website, String responsible
 		Ong ong1 = new Ong(null, "Adote POA", "adotepoa@hotmail.com", "(51) 981789290", "www.instagram.com/adotepoa", "Carla da Silva");
-		Pet pet1 = new Pet(null, "Rex", "rex1.jpg", Size.M, Gender.MACHO, healthPet1, "Dócil e ativo", ong1);
-		Pet pet2 = new Pet(null, "Flora", "flora1.jpg", Size.P, Gender.FEMEA, healthPet2, "Ativa", ong1);
+		Ong ong2 = new Ong(null, "Ong Garra", "ongagarra@yahoo.com.br", "(48) 30758967", "https://www.onggarra.com", "Eduardo Torres");
 		
-		ongRepository.saveAll(Arrays.asList(ong1));
-		petRepository.saveAll(Arrays.asList(pet1, pet2));
+		Pet pet1 = new Pet(null, "Rex", "rex1.jpg", Size.M, Gender.MACHO, healthPet1, 4,  "Dócil e ativo", ong1);
+		Pet pet2 = new Pet(null, "Flora", "flora1.jpg", Size.P, Gender.FEMEA, healthPet2, 0, "Ativa", ong1);
+		Pet pet3 = new Pet(null, "Bidu", "bidu1.jpg", Size.G, Gender.MACHO, healthPet3, 2, "Ativo, um pouco desconfiado e ama passear", ong2);
+		Pet pet4 = new Pet(null, "Nina", "nina1.jpg", Size.M, Gender.FEMEA, healthPet4, 7, "Ativa e sociável", ong1);
+		Pet pet5 = new Pet(null, "Max", "max1.jpg", Size.G, Gender.MACHO, healthPet2, 12, null, ong2);
+		Pet pet6 = new Pet(null, "Mike", "mike1.jpg", Size.P, Gender.MACHO, healthPet1, 5, "Ativo, dócil, não é acostumado a outros animais", ong1);
+		Pet pet7 = new Pet(null, "Simba", "simba1.jpg", Size.G, Gender.MACHO, healthPet3, 7, null, ong2);
+		Pet pet8 = new Pet(null, "Lili", "lili1.jpg", Size.G, Gender.FEMEA, healthPet4, 2, "Dócil e carinhosa", ong1);
+		Pet pet9 = new Pet(null, "Fred", "fred1.jpg", Size.M, Gender.MACHO, healthPet1, 5, "Dócil, tranquilo e carinhoso", ong2);
 		
+		
+		Adopter adopter1 = new Adopter(null, "Daniela da Silva", "daniela@yahoo.com.br", "55 51 981547895");
+		Adopter adopter2 = new Adopter(null, "Bruno dos Santos", "bruno@hotmail.com", "55 14 34159768");
+		
+		AdopterPetAssociation adopterPet1 = new AdopterPetAssociation();
+		adopterPet1.setPet(pet1);
+		adopterPet1.setAdopter(adopter1);
+		
+		
+		ongRepository.saveAll(Arrays.asList(ong1, ong2));
+		petRepository.saveAll(Arrays.asList(pet1, pet2, pet3, pet4, pet5, pet6, pet7, pet8, pet9));
+		adopterRepository.saveAll(Arrays.asList(adopter1, adopter2));
+		adopterPetRepository.saveAll(Arrays.asList(adopterPet1));
+
 	}
+	
+	
+	
+	
 	
 }

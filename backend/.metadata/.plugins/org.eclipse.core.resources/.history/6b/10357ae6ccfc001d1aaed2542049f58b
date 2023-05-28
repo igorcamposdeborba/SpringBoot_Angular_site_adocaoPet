@@ -1,0 +1,36 @@
+package com.adocao.pet.entities.dtos;
+
+import java.io.Serializable;
+import java.time.Instant;
+import java.util.stream.Collectors;
+
+import com.adocao.pet.entities.Adopter;
+import com.adocao.pet.entities.AdopterPetAssociation;
+import com.adocao.pet.entities.Pet;
+
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
+
+public class AdopterPetAssociationDTO implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
+	private Integer id;
+	private Instant dateRequest;
+	
+	// AGREGAÇÃO: para relacionamento
+	@OneToOne (optional = true, mappedBy = "pet") // optional: aceita null no relacionamento (que nesse caso é 0=null ou 1)
+	protected Pet pet;
+	@OneToMany (mappedBy = "adopter")
+	protected Adopter adopter;
+	
+	
+	public AdopterPetAssociationDTO() {
+		super();
+	}
+	
+	public AdopterPetAssociationDTO(AdopterPetAssociation adopterPetAssociation) {
+		super();
+		this.id = adopterPetAssociation.getId();
+		
+	}
+}

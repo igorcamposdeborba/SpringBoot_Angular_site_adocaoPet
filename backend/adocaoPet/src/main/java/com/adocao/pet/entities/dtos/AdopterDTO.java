@@ -64,4 +64,11 @@ public class AdopterDTO implements Serializable {
 		this.telephone = telephone;
 	}
 	
+	public Set<AdopterPetAssociation> getAllAdopterPetAssociation(){
+		return adopterPetAssociation;
+	}
+	public void addAdopterPetAssociation(AdopterPetAssociation adopterPetAssociation){
+		this.adopterPetAssociation.add(adopterPetAssociation);
+	}
+	
 }
