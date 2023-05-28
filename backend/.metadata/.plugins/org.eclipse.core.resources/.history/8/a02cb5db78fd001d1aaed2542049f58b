@@ -1,0 +1,15 @@
+package com.adocao.pet.repositories.resources;
+
+import java.util.Optional;
+
+import com.adocao.pet.entities.AdopterPetAssociation;
+import com.adocao.pet.repositories.AdopterPetAssociationRepository;
+
+public class AdopterPetImplementation implements AdopterPetAssociationRepository {
+
+	@Override
+	public Optional<AdopterPetAssociation> findByAdopterId(Integer idPet, Object obj){
+		
+		return null;
+	}
+}

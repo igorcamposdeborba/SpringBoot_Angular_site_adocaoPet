@@ -1,0 +1,20 @@
+package com.adocao.pet.repositories;
+
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.adocao.pet.entities.AdopterPetAssociation;
+
+//Repository com métodos pré-implementados que se comunicam com o banco de dados
+public interface AdopterPetAssociationRepository extends JpaRepository<AdopterPetAssociation, Integer>{
+
+	// Adicionados métodos personalizados que são implementado no AdopterService
+	//Optional<AdopterPetAssociation> findByAdopterId(Integer adopterId); 
+
+	static Optional<AdopterPetAssociation> findByAdopterId(Integer adopterId, Object object) {
+		Optional<AdopterPetAssociation> varSearchAdopterId = AdopterPetAssociationRepository.findBy(adopterId, i -> i.sortBy(Sort.by("adopterId").descending()).first());
+		return varSearchAdopterId;
+	}
+
+}

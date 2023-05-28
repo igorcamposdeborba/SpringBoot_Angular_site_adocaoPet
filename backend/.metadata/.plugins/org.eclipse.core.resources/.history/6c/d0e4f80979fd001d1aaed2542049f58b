@@ -1,0 +1,19 @@
+package com.adocao.pet.repositories.resources;
+
+import java.util.Optional;
+
+import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Component;
+
+import com.adocao.pet.entities.AdopterPetAssociation;
+import com.adocao.pet.repositories.AdopterPetAssociationRepository;
+
+@Component
+public abstract class AdopterPetImplementation implements AdopterPetAssociationRepository {
+
+	@Override
+	public Optional<AdopterPetAssociation> findByAdopterId(Integer adopterId, Object obj){
+		Optional<AdopterPetAssociation> varSearchAdopterId = AdopterPetAssociationRepository.findByAdopterId(adopterId, i -> i.sortBy(Sort.by("adopterId").descending()).first());
+		return varSearchAdopterId;
+	}
+}

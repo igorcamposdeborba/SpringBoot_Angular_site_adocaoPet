@@ -1,23 +1,19 @@
 package com.adocao.pet.services;
 
-import java.util.ArrayList;
+import java.time.Instant;
 import java.util.List;
 import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.adocao.pet.entities.Adopter;
 import com.adocao.pet.entities.AdopterPetAssociation;
 import com.adocao.pet.entities.Pet;
 import com.adocao.pet.entities.dtos.AdopterDTO;
-import com.adocao.pet.entities.dtos.PetDTO;
 import com.adocao.pet.repositories.AdopterPetAssociationRepository;
 import com.adocao.pet.repositories.AdopterRepository;
 import com.adocao.pet.repositories.PetRepository;
 import com.adocao.pet.services.exceptions.IllegalFormatException;
 import com.adocao.pet.services.exceptions.ObjectNotFoundException;
-
 import jakarta.validation.Valid;
 
 @Service // injetar instancias em outras partes do código
@@ -97,49 +93,32 @@ public class AdopterService {
 	}
 	
 	public AdopterPetAssociation addPetAdopter(Integer idPet, Adopter adopterObj) {
-		// Buscar no banco de dados
+		// Buscar no banco de dados o Pet
 		Optional<Pet> varPet = petRepository.findById(idPet);
 		
-		// Converter DTO para Objeto e atribuir Objetos
-		AdopterPetAssociation adopterPetAssociation = new AdopterPetAssociation(); // criar data e hora do request
-		adopterPetAssociation.setAdopter(adopterObj); // atribuir objeto Adopter
-		
-		PetDTO petDTO = new PetDTO(varPet.get()); // ! REVISAR SE CRIO MESMO O DTO OU SE COLOCO DIRETO NO OBJETO
-		Pet petObj = null;
-		if (varPet.isPresent()) {
-			petObj = varPet.orElse(null);
-		}
-		adopterPetAssociation.setPet(petObj); // atribuir objeto Pet
-
-		// Atribuir objetos Adopter e Pet na classe associativa
-		// AdopterPetAssociation adopterPet = new AdopterPetAssociation();
+		// ATUALIZAR DateRequest: buscar no banco de dados se já tem o Adopter na entity associativa. Se estiver, só atualizar o dateRequest (data e hora do pedido de adoção)
+		Optional<AdopterPetAssociation> varAdopterDateRequest = adopterPetAssociationRepository.findByAdopterId(adopterObj.getId()); // buscar na classa associativa se existe o Adopter para atualizar o dateRequest
+		if (varAdopterDateRequest.isPresent()) { 
+			varAdopterDateRequest.get().changeDateRequest(Instant.now());
 			
-		// adopterPet.setAdopter(new Adopter(adopterDTO));
-		// adopterPet.setPet(petObj); 
+			return adopterPetAssociationRepository.save(varAdopterDateRequest.get()); // Salvar no banco de dados a classe de associação
+			
+			
+		} else { // CRIAR REGISTRO: criar nova linha porque não tem esse usuário na classe associativa AdopterPet
+			// Converter DTO para Objeto e atribuir Objetos
+			AdopterPetAssociation adopterPetAssociation = new AdopterPetAssociation(); // criar data e hora do request
+			adopterPetAssociation.setAdopter(adopterObj); // atribuir objeto Adopter
 
-		return adopterPetAssociationRepository.save(adopterPetAssociation); // Salvar no banco de dados a classe de associação
+			Pet petObj = null;
+			if (varPet.isPresent()) {
+				petObj = varPet.orElse(null);
+			}
+			adopterPetAssociation.setPet(petObj); // atribuir objeto Pet
+			
+			return adopterPetAssociationRepository.save(adopterPetAssociation); // Salvar no banco de dados a classe de associação
+		}	
 	}
 	
-	/*public AdopterPetAssociation addPetAdopter(Integer idPet, AdopterDTO adopterDTO) {
-		// Buscar no banco de dados
-		Optional<Pet> varPet = petRepository.findById(idPet);
-
-		// Converter DTO para Objeto
-		PetDTO petDTO = new PetDTO(varPet.get());
-		Pet petObj = null;
-		if (varPet.isPresent()) {
-			petObj = varPet.orElse(null);
-		}
-
-		// Atribuir objetos Adopter e Pet na classe associativa
-		AdopterPetAssociation adopterPet = new AdopterPetAssociation();
-			
-		adopterPet.setAdopter(new Adopter(adopterDTO));
-		adopterPet.setPet(petObj); 
-
-		return adopterPetAssociationRepository.save(adopterPet); // Salvar no banco de dados a classe de associação
-	}*/
-
 	
 	// VALIDAÇÃO Obrigatória
 	private void validateEmail(AdopterDTO adopterDTO) {

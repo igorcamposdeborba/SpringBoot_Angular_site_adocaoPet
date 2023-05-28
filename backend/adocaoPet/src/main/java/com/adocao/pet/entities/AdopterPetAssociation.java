@@ -38,7 +38,7 @@ public class AdopterPetAssociation implements Serializable { // Serializable par
     @JoinColumn(name = "adopter_id")
     private Adopter adopter;
 
-    private String adopterName;
+    private String adopterName; // Atributos salvos para evitar duas ou mais chamadas ao banco de dados para mostrar o nome do adopter e do pet
     private String petName;
     
 	
@@ -87,7 +87,7 @@ public class AdopterPetAssociation implements Serializable { // Serializable par
 	public Instant getDateRequest() {
 		return dateRequest;
 	}
-	public void addDateRequest(Instant dateRequest) {
+	public void changeDateRequest(Instant dateRequest) {
 		this.dateRequest = dateRequest;
 	}
 	public Integer getId() {
@@ -96,6 +96,7 @@ public class AdopterPetAssociation implements Serializable { // Serializable par
 	public void setId(Integer id) {
 		this.id = id;
 	}
+	
 
 	public Adopter getAdopter(){
 		return adopter;
