@@ -1,11 +1,10 @@
 package com.adocao.pet.services;
 
+import java.util.Base64;
 import java.util.List;
 import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.adocao.pet.entities.Pet;
 import com.adocao.pet.repositories.PetRepository;
 import com.adocao.pet.services.exceptions.ObjectNotFoundException;
@@ -25,7 +24,15 @@ public class PetService {
 
 	
 	public List<Pet> findAll(){
-		return petRepository.findAll();
+		List<Pet> petList = petRepository.findAll(); // buscar Pets no banco de dados
+		
+		for (Pet i : petList) { // converter cada imagem em Base64
+			byte[] image = i.getImage();
+			String Base64String = Base64.getEncoder().encodeToString(image); // Codificar para Base64 (formato reconhecido pelo front-end/Angular)
+			i.setImage(Base64String.getBytes()); // codificar em bytes para o JSON
+		}
+		
+		return petList;
 	}
 
 }

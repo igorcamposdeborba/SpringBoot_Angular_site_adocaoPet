@@ -14,8 +14,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToOne;
 
 // Dados do Pet já estão cadastrado no banco de dados
 
@@ -27,7 +27,8 @@ public class Pet implements Serializable { // Serializable para trafegar em rede
 	@GeneratedValue (strategy = GenerationType.IDENTITY) // Banco de dados gera id
 	private Integer id;
 	private String name;
-	private String image;
+	@Lob
+	private byte[] image;
 	
 	private Size size;
 	private Gender gender;
@@ -39,15 +40,15 @@ public class Pet implements Serializable { // Serializable para trafegar em rede
 	@ManyToOne // Pet conhece a ONG, mas ao contrário não. Por isso não preciso de mappedBy
 	private Ong ong;
 	
-	@OneToOne(mappedBy = "pet")
-	private AdopterPetAssociation adopterPetAssociation;
+	//@OneToOne(mappedBy = "pet")
+	//private AdopterPetAssociation adopterPetAssociation;
 	
 	
 	public Pet() { // construtor vazio para superclasse Serializable &&  protected porque Class, Package e Subclass podem acessar
 		super();
 	}
 	
-	public Pet(Integer id, String name, String image, Size size, Gender gender, Set<Health> health, Integer age, String temperament, Ong ong) {
+	public Pet(Integer id, String name, byte[] image, Size size, Gender gender, Set<Health> health, Integer age, String temperament, Ong ong) {
 		this.id = id;
 		this.name = name;
 		this.image = image;
@@ -79,7 +80,7 @@ public class Pet implements Serializable { // Serializable para trafegar em rede
 	public String getName() {
 		return name;
 	}
-	public String getImage() {
+	public byte[] getImage() {
 		return image;
 	}
 	public Size getSize() {
@@ -103,7 +104,7 @@ public class Pet implements Serializable { // Serializable para trafegar em rede
 	public void setName(String name) {
 		this.name = name;
 	}
-	public void setImage(String image) {
+	public void setImage(byte[] image) {
 		this.image = image;
 	}
 	public void setSize(Size size) {

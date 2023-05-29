@@ -2,12 +2,10 @@ package com.adocao.pet.controllers.exceptions;
 
 import java.text.SimpleDateFormat;
 import java.time.Instant;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-
 import com.adocao.pet.services.exceptions.DataIntegrityViolationException;
 import com.adocao.pet.services.exceptions.IllegalFormatException;
 import com.adocao.pet.services.exceptions.ObjectNotFoundException;

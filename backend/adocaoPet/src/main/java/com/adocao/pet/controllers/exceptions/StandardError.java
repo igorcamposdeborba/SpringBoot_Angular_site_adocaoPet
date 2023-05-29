@@ -1,7 +1,6 @@
 package com.adocao.pet.controllers.exceptions;
 
 import java.io.Serializable;
-import java.time.Instant;
 
 // Superclasse: campos do erro para a classe ValidationError implementar
 public class StandardError implements Serializable {

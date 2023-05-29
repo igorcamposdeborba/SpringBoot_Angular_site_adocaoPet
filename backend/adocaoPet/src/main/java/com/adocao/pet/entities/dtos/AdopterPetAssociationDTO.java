@@ -2,7 +2,6 @@ package com.adocao.pet.entities.dtos;
 
 import java.io.Serializable;
 import java.time.Instant;
-
 import com.adocao.pet.entities.Adopter;
 import com.adocao.pet.entities.AdopterPetAssociation;
 import com.adocao.pet.entities.Pet;

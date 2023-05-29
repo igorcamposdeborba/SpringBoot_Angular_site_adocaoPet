@@ -3,11 +3,8 @@ package com.adocao.pet.entities;
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.Objects;
-import java.util.stream.Collectors;
-
 import com.adocao.pet.entities.dtos.AdopterDTO;
 import com.adocao.pet.entities.dtos.PetDTO;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
