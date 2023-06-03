@@ -1,0 +1,37 @@
+.banner {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+    grid-template-areas:
+      "title image"
+      "title image"
+  }
+  
+.title { 
+    grid-area: title;
+    margin: auto;
+}
+.title > h1 {
+    font-size: 2.5em; /* Modify the font size as desired */
+    line-height: 34pt;
+}
+
+.image {
+    grid-area: image;
+    height: 55vh;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: url("https://bompracachorro.blogfolha.uol.com.br/files/2019/01/img_3083-768x519.jpg");
+    width: 100%;
+}
+
+/* Botão principal */
+.button-primary {
+    margin-top: 1rem;
+    background-color: var(--blueStrong); /* usando a variável global para aplicar cor padrão */
+    color: #fff;
+}
+.button-primary:hover {
+    opacity: 0.85;
+}

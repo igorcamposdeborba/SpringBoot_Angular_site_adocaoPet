@@ -1,0 +1,49 @@
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    height: 210px;
+    grid-auto-flow: column;
+    background-color: var(--blueStrong);
+    box-shadow: 0 -3px 2px rgb(241, 241, 241);
+    align-items: center;
+}
+
+footer a { 
+    text-decoration: none;
+    color: #fff;
+}
+footer a:hover {
+    color: #bcbcbc;
+}
+
+#left-text {
+    grid-gap: 10px;
+    justify-self: right;
+    text-align: right;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#right-text {
+    grid-gap: 10px;
+    justify-self: left;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.list {
+    margin-top: 20px;
+    padding: 5px 0;
+}
+
+
+#logo {
+    background-image: url("https://upload.wikimedia.org/wikipedia/pt/9/91/Lp_logo_unisinos.png");
+    filter: brightness(0) invert(1); /* alterar imagem para cor branca, luminosidade zero  e invertendo cor */
+    width: 145px;
+    height: 40px;
+    margin: -83px 0 0 5px;
+    background-size: cover;
+    background-position: center center;
+}
+#logo:hover {
+    opacity: 0.85;
+}

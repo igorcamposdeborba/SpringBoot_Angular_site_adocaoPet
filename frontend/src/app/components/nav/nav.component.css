@@ -1,0 +1,33 @@
+nav {
+    display: grid;
+    grid-auto-flow: column;
+    background-color: #fff;
+    box-shadow: 0 3px 2px rgb(241, 241, 241);
+    align-items: center;
+}
+#logo-position {
+    width: 150px;
+}
+.menu-items {
+    grid-gap: 10px;
+    justify-self: right;
+    margin: 10px 10px 10px 20px;
+}
+.menu-items > a > button {
+    margin: 3px 10px 3px 0; 
+}
+.gray {
+    background-color: var(--blue); /* usando a variável global para aplicar cor padrão */
+}
+
+#logo {
+    background-image: url("https://upload.wikimedia.org/wikipedia/pt/9/91/Lp_logo_unisinos.png");
+    width: 150px;
+    height: 40px;
+    margin: 5px 0 0 5px;
+    background-size: cover;
+    background-position: center center;
+}
+#logo:hover {
+    opacity: 0.85;
+}
