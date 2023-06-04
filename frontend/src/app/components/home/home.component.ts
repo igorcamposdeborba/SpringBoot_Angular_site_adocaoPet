@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MiniBannerComponent } from '../elements/mini-banner/mini-banner.component';
+import { AdoptionProcessBannerComponent } from '../elements/adoption-process-banner/adoption-process-banner.component';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +12,8 @@ export class HomeComponent {
   }
   
   ngOnInit(): void { // ciclo de vida: ao iniciar o componente
+    MiniBannerComponent;
+    AdoptionProcessBannerComponent;
   }
   
 }

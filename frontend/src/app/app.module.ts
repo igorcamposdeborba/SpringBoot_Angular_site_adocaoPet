@@ -29,6 +29,9 @@ import { MatCardModule } from '@angular/material/card';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PetCatalogComponent } from './components/pet/pet-catalog/pet-catalog.component';
+import { MiniBannerComponent } from './components/elements/mini-banner/mini-banner.component';
+import { AdoptionProcessBannerComponent } from './components/elements/adoption-process-banner/adoption-process-banner.component';
 
 
 
@@ -37,7 +40,10 @@ import { FooterComponent } from './components/footer/footer.component';
     AppComponent,
     NavComponent, // declarado componente (no caso do Angular)
     HomeComponent,
-    FooterComponent 
+    FooterComponent,
+    PetCatalogComponent,
+    MiniBannerComponent,
+    AdoptionProcessBannerComponent 
   ],
   imports: [
     BrowserModule,

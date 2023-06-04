@@ -12,18 +12,18 @@
     margin: auto;
 }
 .title > h1 {
-    font-size: 2.5em; /* Modify the font size as desired */
+    font-size: 2.5em;
     line-height: 34pt;
 }
 
 .image {
     grid-area: image;
+    width: 100%;
     height: 55vh;
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
     background-image: url("https://bompracachorro.blogfolha.uol.com.br/files/2019/01/img_3083-768x519.jpg");
-    width: 100%;
 }
 
 /* Botão principal */

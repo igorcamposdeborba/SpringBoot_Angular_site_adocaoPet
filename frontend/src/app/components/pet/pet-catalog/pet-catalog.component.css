@@ -1,0 +1,40 @@
+main{
+    margin: 2vw 9vw 8vh 9vw;
+}
+a {
+    text-decoration: none;
+}
+
+.align-center-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-container-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px 10px;
+}
+.image {
+    border-radius: 2.5%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.image:hover{
+    opacity: 0.94;
+}
+
+.caption {
+    margin-top: -15px;
+    height: 35px;
+    background-color: rgba(121, 179, 210, 0.642);
+    border-radius: 0 0 19px 19px;
+}
+.caption-title {
+    padding-top: 15px;
+    font-size: medium;
+    color: #2d2d2d;
+}

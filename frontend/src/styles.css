@@ -1,10 +1,24 @@
 /* Estilos globais do css */
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
-html, body { height: 100%; }
+html, body { 
+    height: 100%; 
+    background-color: #D5EAFB;
+}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 :root { /* Variável global para aplicar cor padrão */
     --blue: rgb(226, 239, 251);
     --blueStrong: rgb(3, 0, 55);
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    color: rgb(3, 0, 55);
+} 
+h2 {
+    font-size: 1.5em!important;
+}
+h3 {
+    font-size: 1.3em!important;
+    font-weight: 500!important;
 }

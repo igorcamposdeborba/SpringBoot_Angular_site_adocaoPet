@@ -1,0 +1,38 @@
+.banner {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 12vw;
+    margin: 1% -26% 0 33%;
+    grid-template-areas:
+      "image"
+      "title";
+    align-items: center; 
+    filter: brightness(0);
+}
+a {
+    text-decoration: none;
+}
+.banner:hover {
+    opacity: 0.77;
+}
+  
+.title { 
+    grid-area: title;
+    text-align: center;
+    margin: auto;
+}
+
+.image {
+    grid-area: image;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+}
