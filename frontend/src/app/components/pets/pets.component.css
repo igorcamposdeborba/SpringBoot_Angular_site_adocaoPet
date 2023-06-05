@@ -1,5 +1,6 @@
 aside {
     margin-top: 40px;
+    z-index: 999;
 }
 h1 {
     font-weight: 600;
@@ -37,4 +38,7 @@ h1 {
 
 #button-cta {
     width: 100%;
+}
+.button-white {
+    background-color: #eaeaea;
 }

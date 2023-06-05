@@ -38,11 +38,16 @@ export class PetsComponent {
   ngOnInit(): void { // ciclo de vida: ao iniciar o componente
     this.id = this.route.snapshot.paramMap.get('id');
     this.findById(this.id);
+    this.scrollToTop()
   }
   
   findById(id :number){ // View chama requisição do service.
     this.service.findById(id).subscribe(response => {
       this.ELEMENT_DATA_PET = response;
     }); 
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

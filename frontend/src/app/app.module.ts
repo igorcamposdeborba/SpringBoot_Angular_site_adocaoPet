@@ -24,6 +24,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { CommonModule } from '@angular/common';
 
 // Componentes do projeto
 import { NavComponent } from './components/nav/nav.component';
@@ -34,6 +36,8 @@ import { MiniBannerComponent } from './components/elements/mini-banner/mini-bann
 import { AdoptionProcessBannerComponent } from './components/elements/adoption-process-banner/adoption-process-banner.component';
 import { PetsComponent } from './components/pets/pets.component';
 import { DoacaoComponent } from './components/static-pages/doacao/doacao.component';
+import { OngComponent } from './components/static-pages/ong/ong.component';
+import { CookiesComponent } from './components/static-pages/cookies/cookies.component';
 
 
 
@@ -47,7 +51,9 @@ import { DoacaoComponent } from './components/static-pages/doacao/doacao.compone
     MiniBannerComponent,
     AdoptionProcessBannerComponent,
     PetsComponent,
-    DoacaoComponent 
+    DoacaoComponent,
+    OngComponent,
+    CookiesComponent 
   ],
   imports: [
     BrowserModule,
@@ -72,7 +78,9 @@ import { DoacaoComponent } from './components/static-pages/doacao/doacao.compone
     MatTableModule,
     MatIconModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    CommonModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

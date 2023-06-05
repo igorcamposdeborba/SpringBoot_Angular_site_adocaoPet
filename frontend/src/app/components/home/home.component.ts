@@ -8,6 +8,7 @@ import { AdoptionProcessBannerComponent } from '../elements/adoption-process-ban
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+
   constructor(){
   }
   
@@ -19,5 +20,5 @@ export class HomeComponent {
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-  
+
 }
