@@ -12,4 +12,7 @@ export class FooterComponent {
   ngOnInit(): void { // ciclo de vida: ao iniciar o componente
   }
   
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

@@ -32,6 +32,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PetCatalogComponent } from './components/pet/pet-catalog/pet-catalog.component';
 import { MiniBannerComponent } from './components/elements/mini-banner/mini-banner.component';
 import { AdoptionProcessBannerComponent } from './components/elements/adoption-process-banner/adoption-process-banner.component';
+import { PetsComponent } from './components/pets/pets.component';
+import { DoacaoComponent } from './components/static-pages/doacao/doacao.component';
 
 
 
@@ -43,7 +45,9 @@ import { AdoptionProcessBannerComponent } from './components/elements/adoption-p
     FooterComponent,
     PetCatalogComponent,
     MiniBannerComponent,
-    AdoptionProcessBannerComponent 
+    AdoptionProcessBannerComponent,
+    PetsComponent,
+    DoacaoComponent 
   ],
   imports: [
     BrowserModule,

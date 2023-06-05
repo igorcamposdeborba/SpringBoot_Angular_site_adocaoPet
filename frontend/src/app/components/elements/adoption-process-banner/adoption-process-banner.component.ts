@@ -7,7 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AdoptionProcessBannerComponent {
 
-  scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+
 }

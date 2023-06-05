@@ -11,7 +11,6 @@ import { Router } from '@angular/router';
 })
 export class PetCatalogComponent implements OnInit {
 
-  // Dados fixos do MOCK
   ELEMENT_DATA_ONG: Ong[] = []
   
   ELEMENT_DATA_PET: Pet[] = []
@@ -54,5 +53,9 @@ export class PetCatalogComponent implements OnInit {
 
   ngOnInit(): void { // ciclo de vida: ao iniciar o componente
     AdoptionProcessBannerComponent;
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

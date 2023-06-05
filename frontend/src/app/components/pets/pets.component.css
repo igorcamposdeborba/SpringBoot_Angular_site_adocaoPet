@@ -1,0 +1,40 @@
+aside {
+    margin-top: 40px;
+}
+h1 {
+    font-weight: 600;
+}
+.bold {
+    font-weight: bold;
+}
+#container-list {
+    margin: 10vh 0 2vh 1vh;
+    line-height: 2rem;
+}
+
+.align-center-grid {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+.grid-container-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px 10px;
+}
+.image {
+    border-radius: 0 0 5% 0;
+    object-fit: cover;
+    width: 600px;
+    height: auto;
+}
+.button-center {
+    text-align: center;
+    margin: 4vw 0;
+}
+
+#button-cta {
+    width: 100%;
+}

@@ -1,0 +1,14 @@
+main {
+    margin: 6vw 9vw 8vh 9vw;
+}
+h1 {
+    font-weight: 600;
+}
+hr {
+    margin: 4vh 0;
+}
+
+#button-center {
+    text-align: center;
+    margin: 4vw auto;
+}

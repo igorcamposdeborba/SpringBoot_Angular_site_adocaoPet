@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { API_CONFIG } from '../config/api.config';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
 import { Ong, Pet } from '../models/pet';
 
 
@@ -36,7 +35,11 @@ export class PetService {
   );
 }*/
 findAll(): Observable<Pet[]> {
-  return this.http.get<Pet[]>(`${API_CONFIG.baseUrl}/pets`)
+  return this.http.get<Pet[]>(`${API_CONFIG.baseUrl}/catalog`)
+}
+
+findById(id: number): Observable<Pet> {
+  return this.http.get<Pet>(`${API_CONFIG.baseUrl}/catalog/pets/${id}`)
 }
 
 }

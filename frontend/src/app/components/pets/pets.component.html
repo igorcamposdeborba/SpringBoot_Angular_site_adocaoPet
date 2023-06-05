@@ -1,0 +1,30 @@
+<main>
+    
+    <div class="align-center-grid">
+        <div class="grid-container-images">
+            <img class="image" src="{{ELEMENT_DATA_PET.image}}" alt="{{ELEMENT_DATA_PET.name}}">
+            <div id="container-list">
+                <h1>{{ ELEMENT_DATA_PET.name }}</h1>
+                <button mat-raised-button color="primary" id="button-cta"> Adotar </button>
+                ONG: {{ELEMENT_DATA_PET.nameOng}}<br/>
+               <!-- <img src="" alt="{{ELEMENT_DATA_PET.size}}"/> --> <span class="bold">Porte</span>: {{ELEMENT_DATA_PET.size}} <br/>
+               <!-- <img src="" alt="{{ELEMENT_DATA_PET.gender}}"/> --> <span class="bold">Gênero</span>: {{ELEMENT_DATA_PET.gender}} <br/>
+               <!-- <img src="" alt="{{ELEMENT_DATA_PET.health}}"/> --> <span class="bold">Saúde</span>: {{ELEMENT_DATA_PET.health}} <br/>
+               <!-- <img src="" alt="{{ELEMENT_DATA_PET.temperament}}"/> --> <span class="bold">Temperamento</span>: {{ELEMENT_DATA_PET.temperament}} <br/>
+            </div>
+        </div>
+    </div>
+    
+</main>
+
+<aside>
+    <app-mini-banner></app-mini-banner> <!-- Associação com componente -->
+    <div class="button-center" >
+        <button mat-raised-button color="primary" onclick="history.back()"> Conheça os Pets </button>
+    </div>
+
+    <app-adoption-process-banner></app-adoption-process-banner> <!-- Associação com componente -->
+    <div class="button-center" >
+        <button mat-stroked-button color="primary" onclick="history.back()"> Conheça os Pets </button>
+    </div>
+</aside>

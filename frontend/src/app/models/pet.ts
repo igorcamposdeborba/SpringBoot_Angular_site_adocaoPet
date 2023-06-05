@@ -15,5 +15,6 @@ export interface Pet {
     gender: string;
     health: string[];
     age: number;
-    ong: Ong; // Composição
+    temperament: string;
+    nameOng: string;
 }
