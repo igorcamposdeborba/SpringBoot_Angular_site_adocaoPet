@@ -3,7 +3,7 @@
         <h1>
             Seu amigo de aventuras:<br/> <strong>adote um pet</strong><br> e viva uma história incrível
         </h1>
-        <a routerLink="/catalog"> <button mat-stroked-button class="button-primary"> Conheça os Pets </button> </a>
+        <a routerLink="/catalog"> <button mat-stroked-button class="button-primary" (click)="scrollToTop()"> Conheça os Pets </button> </a>
     </div>
     <div class="image">
     </div>
@@ -19,5 +19,5 @@
 
 <app-adoption-process-banner></app-adoption-process-banner> <!-- Associação com componente -->
 <div class="button-center" >
-    <a routerLink="catalog"> <button mat-raised-button color="primary"> Conheça os Pets </button> </a>
+    <a routerLink="catalog"> <button mat-raised-button color="primary" (click)="scrollToTop()"> Conheça os Pets </button> </a>
 </div>
