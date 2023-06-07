@@ -19,7 +19,7 @@ public class PetDTO implements Serializable {
 	@NotNull (message = "O campo NOME é obrigatório")
 	private String name;
 	@NotNull (message = "O campo IMAGEM é obrigatório")
-	private byte[] image;
+	private String image;
 	
 	@Nullable
 	private Size size;
@@ -67,7 +67,7 @@ public class PetDTO implements Serializable {
 	public String getName() {
 		return name;
 	}
-	public byte[] getImage() {
+	public String getImage() {
 		return image;
 	}
 	public Size getSize() {

@@ -1,0 +1,11 @@
+
+•
+java:S1488G"bImmediately return this expression instead of assigning it to the temporary variable "instantNow".(€Àƒ¸8ô’ö…1Hé8RMINORZ
+CODE_SMELL
+€	java:S100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬‰Á¢8ô’ö…1Hì8RMINORZ
+CODE_SMELL
+
+java:S1192$"TDefine a constant instead of duplicating this literal "ViolaÃ§Ã£o de dados" 3 times.(Éã›¶üÿÿÿÿ8èÉ­ö…1HŒ9RCRITICALZ
+CODE_SMELL
+€	java:S100,"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü­ˆş8–şªö…1H‚9RMINORZ
+CODE_SMELL

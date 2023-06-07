@@ -1,4 +1,13 @@
 
-m
-java:S2094"BRemove this empty class, write its code or make it an "interface".(ï¤ÙHRMINORZ
+n	java:S125 "<This block of commented-out lines of code should be removed.(›‹·ı8è­óºˆ1H×~RMAJORZ
+CODE_SMELL
+s	java:S1076"AConstructor has 9 parameters, which is greater than 7 authorized.(ÍƒË—8€É’Ö…1H¿|RMAJORZ
+CODE_SMELL
+h
+java:S1128"4Remove this unused import 'jakarta.persistence.Lob'.(¾¡úó8¿ƒè»ˆ1H™€RMINORZ
+CODE_SMELL
+s	java:S125/"<This block of commented-out lines of code should be removed.(ŠÆäˆûÿÿÿÿ8ôğ¤†1HÀ|RMAJORZ
+CODE_SMELL
+‘
+java:S2293&"YReplace the type specification in this constructor call with the diamond operator ("<>").(­§µúøÿÿÿÿ8³ğíÜ„1H½|RMINORZ
 CODE_SMELL

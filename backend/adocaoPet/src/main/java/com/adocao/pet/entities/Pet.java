@@ -10,6 +10,7 @@ import com.adocao.pet.entities.enums.Gender;
 import com.adocao.pet.entities.enums.Health;
 import com.adocao.pet.entities.enums.Size;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -27,8 +28,10 @@ public class Pet implements Serializable { // Serializable para trafegar em rede
 	@GeneratedValue (strategy = GenerationType.IDENTITY) // Banco de dados gera id
 	private Integer id;
 	private String name;
-	@Lob
-	private byte[] image;
+	// @Lob // Blob: dados binários para diminuir o espaço ocupado na imagem no banco de dados e evitar que fique uma string gigante banco de dados
+	// private byte[] image;
+	@Column(columnDefinition = "TEXT") // define a coluna  para o tipo TEXT no banco de dados para armazenar grandes strings maios que 255 caracteres
+	private String image;
 	
 	private Size size;
 	private Gender gender;
@@ -48,7 +51,7 @@ public class Pet implements Serializable { // Serializable para trafegar em rede
 		super();
 	}
 	
-	public Pet(Integer id, String name, byte[] image, Size size, Gender gender, Set<Health> health, Integer age, String temperament, Ong ong) {
+	public Pet(Integer id, String name, String image, Size size, Gender gender, Set<Health> health, Integer age, String temperament, Ong ong) {
 		this.id = id;
 		this.name = name;
 		this.image = image;
@@ -80,7 +83,7 @@ public class Pet implements Serializable { // Serializable para trafegar em rede
 	public String getName() {
 		return name;
 	}
-	public byte[] getImage() {
+	public String getImage() {
 		return image;
 	}
 	public Size getSize() {
@@ -104,7 +107,7 @@ public class Pet implements Serializable { // Serializable para trafegar em rede
 	public void setName(String name) {
 		this.name = name;
 	}
-	public void setImage(byte[] image) {
+	public void setImage(String image) {
 		this.image = image;
 	}
 	public void setSize(Size size) {

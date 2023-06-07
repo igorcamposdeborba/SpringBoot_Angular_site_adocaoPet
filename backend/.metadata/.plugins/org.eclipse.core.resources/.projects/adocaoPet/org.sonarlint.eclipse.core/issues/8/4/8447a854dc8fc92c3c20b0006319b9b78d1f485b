@@ -1,4 +1,20 @@
 
-r
-java:S2094"BRemove this empty class, write its code or make it an "interface".(â‚Ò¦úÿÿÿÿHRMINORZ
+c
+java:S1128"0Remove this unused import 'java.io.InputStream'.(¹»º8¤õ“»ˆ1H´RMINORZ
+CODE_SMELL
+`
+java:S1128	"-Remove this unused import 'java.util.Base64'.(ëŠ»Õ8¤õ“»ˆ1H¸RMINORZ
+CODE_SMELL
+l
+java:S1128":Remove this unused import 'java.io.ByteArrayOutputStream'.(Î‡È8¤õ“»ˆ1H°RMINORZ
+CODE_SMELL
+h
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8¤õ“»ˆ1H²RMINORZ
+CODE_SMELL
+a
+java:S1128")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ8¤õ“»ˆ1H¶RMINORZ
+CODE_SMELL
+m	java:S125="<This block of commented-out lines of code should be removed.(†—Æ78¤õ“»ˆ1HŸRMAJORZ
+CODE_SMELL
+n	java:S125l"<This block of commented-out lines of code should be removed.(·îèÙ8¤õ“»ˆ1H§RMAJORZ
 CODE_SMELL

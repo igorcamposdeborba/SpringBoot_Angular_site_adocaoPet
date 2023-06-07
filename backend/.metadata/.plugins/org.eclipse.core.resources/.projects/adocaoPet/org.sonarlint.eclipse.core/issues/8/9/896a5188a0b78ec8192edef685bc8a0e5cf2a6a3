@@ -1,0 +1,20 @@
+
+`
+java:S1172?"-Remove this unused method parameter "petDTO".(°ð¨§8»ââÿ…1HÀTRMAJORZ
+CODE_SMELL
+n	java:S1250"<This block of commented-out lines of code should be removed.(ƒóù8»ââÿ…1HÂTRMAJORZ
+CODE_SMELL
+’
+java:S1450&"ZRemove the "adopterName" field and declare it as a local variable in the relevant methods.(ÀéË›úÿÿÿÿ8¾ãÿ˜†1HÄsRMINORZ
+CODE_SMELL
+g
+java:S1068&"/Remove this unused "adopterName" private field.(ÀéË›úÿÿÿÿ8¾ãÿ˜†1HÌsRMAJORZ
+CODE_SMELL
+m	java:S125E"<This block of commented-out lines of code should be removed.(ºþÆ#8»ââÿ…1HÏTRMAJORZ
+CODE_SMELL
+^
+java:S1068'"+Remove this unused "petName" private field.(‹¨ú8¾ãÿ˜†1HÏsRMAJORZ
+CODE_SMELL
+‰
+java:S1450'"VRemove the "petName" field and declare it as a local variable in the relevant methods.(‹¨ú8¾ãÿ˜†1HÈsRMINORZ
+CODE_SMELL

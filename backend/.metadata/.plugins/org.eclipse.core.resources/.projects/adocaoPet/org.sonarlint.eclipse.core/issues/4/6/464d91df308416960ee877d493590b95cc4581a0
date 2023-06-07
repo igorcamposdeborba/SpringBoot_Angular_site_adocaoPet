@@ -1,4 +1,8 @@
 
-r
-java:S2094"BRemove this empty class, write its code or make it an "interface".(˜ß»ŒþÿÿÿÿHRMINORZ
+s	java:S125+"<This block of commented-out lines of code should be removed.(ŠÆäˆûÿÿÿÿ8Å­å¤†1H…}RMAJORZ
+CODE_SMELL
+n	java:S125\"<This block of commented-out lines of code should be removed.(è½àü8ßŽæ¤†1H†}RMAJORZ
+CODE_SMELL
+‘
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(­§µúøÿÿÿÿ8ë†ëÒ…1HŒ}RMINORZ
 CODE_SMELL

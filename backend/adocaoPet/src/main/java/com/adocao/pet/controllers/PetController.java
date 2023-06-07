@@ -13,15 +13,15 @@ import com.adocao.pet.entities.dtos.PetDTO;
 import com.adocao.pet.services.PetService;
 
 // ENDPOINTS do Controller
+@RequestMapping(value = "/catalog")
 @RestController
-@RequestMapping(value = "/pets")
 public class PetController {
 	
 	@Autowired
 	protected PetService petService;
 	
 	// Endpoint GET FIND BY ID
-	@GetMapping(value = "/{id}")
+	@GetMapping(value = "/pets/{id}")
 	public ResponseEntity<PetDTO> findById(@PathVariable Integer id){ // controla resposta http do servidor (eu especifico header e body)
 																	  // retorna o DTO
 		Pet objPet = this.petService.findById(id); // buscar objeto no banco de dados
@@ -31,7 +31,7 @@ public class PetController {
 	
 	
 	// Endpoint GET FIND ALL
-	@GetMapping(value = {"/", ""})
+	@GetMapping(value = {"", "/"})
 	public ResponseEntity<List<PetDTO>> findAll(){
 		List<Pet> listPet = petService.findAll(); // pegar lista de pets no banco
 												  // ! REVISAR: TALVEZ IMPLEMENTAR UM SET (porque não pode ter repetição de pets)

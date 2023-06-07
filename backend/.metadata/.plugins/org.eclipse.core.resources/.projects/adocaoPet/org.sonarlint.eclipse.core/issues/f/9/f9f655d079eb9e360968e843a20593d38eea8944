@@ -1,4 +1,4 @@
 
-r
-java:S2094"BRemove this empty class, write its code or make it an "interface".(µÑ¿‡ûÿÿÿÿH	RMINORZ
+
+java:S3305"ZInject this field value directly into "instantiateDataBase", the only method that uses it.(¥š8¡®ºÔ…1HüRCRITICALZ
 CODE_SMELL

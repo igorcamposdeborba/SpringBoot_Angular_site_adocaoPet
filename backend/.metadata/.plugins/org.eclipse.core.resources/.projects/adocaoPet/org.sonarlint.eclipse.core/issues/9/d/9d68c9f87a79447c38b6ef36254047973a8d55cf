@@ -1,0 +1,9 @@
+
+r
+java:S18541"?Remove this useless assignment to local variable "dateRequest".(•‚ÕÖ8 ®›÷…1H”:RMAJORZ
+CODE_SMELL
+[
+java:S16561"/Remove or correct this useless self-assignment.(•‚ÕÖ8 ®›÷…1H•:RMAJORZBUG
+œ
+java:S41651"iRemove this useless assignment; "dateRequest" already holds the assigned value along all execution paths.(•‚ÕÖ8 ®›÷…1H“:RMAJORZ
+CODE_SMELL

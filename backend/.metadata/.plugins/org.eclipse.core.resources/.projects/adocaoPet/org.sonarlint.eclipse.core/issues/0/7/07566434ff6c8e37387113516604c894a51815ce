@@ -1,4 +1,9 @@
 
-m
-java:S2094"BRemove this empty class, write its code or make it an "interface".(ëÿÃHRMINORZ
+—
+java:S1488"_Immediately return this expression instead of assigning it to the temporary variable "petList".(¯¡¶¹ùÿÿÿÿ8“¦˜»ˆ1H½RMINORZ
+CODE_SMELL
+s	java:S125"<This block of commented-out lines of code should be removed.(îçÊİüÿÿÿÿ8“¦˜»ˆ1HÀRMAJORZ
+CODE_SMELL
+`
+java:S1128"-Remove this unused import 'java.util.Base64'.(ëŠ»Õ8“¦˜»ˆ1HÃRMINORZ
 CODE_SMELL

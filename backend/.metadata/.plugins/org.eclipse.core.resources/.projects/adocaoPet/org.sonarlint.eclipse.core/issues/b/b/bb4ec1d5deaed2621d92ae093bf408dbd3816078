@@ -1,0 +1,15 @@
+
+i
+java:S25894"7Remove this expression which always evaluates to "true"(ë”»98šç…†1H~RMAJORZ
+CODE_SMELL
+_
+java:S1172G",Remove this unused method parameter "idPet".(Ö èØ8¡‹„–†1H~RMAJORZ
+CODE_SMELL
+[
+java:S1125ž"'Remove the unnecessary boolean literal.(ìñ¯å8ÿßÖì…1H’~RMINORZ
+CODE_SMELL
+v
+java:S1854I">Remove this useless assignment to local variable "newAdopter".(«ýÒÊùÿÿÿÿ8£ïÃ…†1H•~RMAJORZ
+CODE_SMELL
+}
+java:S3655?"LCall "varPet.isPresent()" or "!varPet.isEmpty()" before accessing the value.(„ñ‹íýÿÿÿÿ8µâ£„†1H–~RMAJORZBUG
