@@ -6,8 +6,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./mini-banner.component.css']
 })
 export class MiniBannerComponent {
-  title : string;
-  description : string;
+  @Input() title : string;
+  @Input() description : string;
+  @Input() backgroundImage : string;
 
   constructor(){
   }

@@ -18,7 +18,11 @@
 </main>
 
 <aside>
-    <app-mini-banner></app-mini-banner> <!-- Associação com componente -->
+    <div class="dimension">
+        <app-mini-banner [title]="'Doar mantimentos'" [description]="'Ajude com rações, medicamentos, materiais de limpeza etc'"
+        backgroundImage="../../../../assets/heart.png"></app-mini-banner> <!-- Associação com componente -->
+    </div>
+
     <div class="button-center" >
         <button mat-stroked-button color="primary" class="button-white" onclick="history.back()"> Conheça os Pets </button>
     </div>

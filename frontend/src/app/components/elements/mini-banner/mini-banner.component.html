@@ -1,23 +1,9 @@
-<div class="center">
-    <aside class="banner">
-        <div class="title">
-            <a routerLink="/doacao">
-                <div [ngStyle]="{'background-image': 'url(../../../../assets/heart.png)'}" class="image"></div>
-                <h3 [innerText]="'Doar mantimentos'"></h3>
-                <p [innerText]="'Ajude com rações, medicamentos, materiais de limpeza etc'"></p>
-            </a>
-        </div>
-    </aside>
-
-
-
-    <aside class="banner">
-        <div class="title">
-            <a routerLink="/ong">
-                <div [ngStyle]="{'background-image': 'url(../../../../assets/megaphone.png)'}" class="image"></div>
-                <h3 [innerText]="'Divulgar Pet'"></h3>
-                <p [innerText]="'Sou ONG e quero divulgar meus pets ou receber mantimento'"></p>
-            </a>
-        </div>
-    </aside>
-</div>
+<aside class="banner">
+    <div class="title">
+        <a routerLink="/doacao">
+            <div [style.background-image]="'url(' + backgroundImage + ')'" class="image"></div>
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+        </a>
+    </div>
+</aside>

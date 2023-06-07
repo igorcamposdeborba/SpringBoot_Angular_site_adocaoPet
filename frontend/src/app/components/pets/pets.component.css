@@ -42,3 +42,8 @@ h1 {
 .button-white {
     background-color: #eaeaea;
 }
+
+.dimension {
+    width: 320px;
+    margin: auto;
+}

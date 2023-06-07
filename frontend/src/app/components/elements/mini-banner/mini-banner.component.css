@@ -2,8 +2,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    width: 12vw;
-    margin: 1% -26% 0 33%;
+    width: 50%;
+    margin: 2% auto;
     grid-template-areas:
       "image"
       "title";
@@ -25,14 +25,9 @@ a {
 
 .image {
     grid-area: image;
-    width: 60px;
-    height: 60px;
-    margin: auto;
+    width: 53px;
+    height: 53px;
+    margin: 40px auto 0;
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-.center {
-    display: flex;
-    flex-direction: row;
 }

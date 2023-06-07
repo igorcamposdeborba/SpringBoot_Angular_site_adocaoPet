@@ -9,8 +9,14 @@
     </div>
 </main>
 
+<div class="center">
+    <app-mini-banner [title]="'Doar mantimentos'" [description]="'Ajude com rações, medicamentos, materiais de limpeza etc'"
+                    backgroundImage="../../../../assets/heart.png"></app-mini-banner> <!-- Associação com componente -->
 
-<app-mini-banner></app-mini-banner> <!-- Associação com componente -->
+    <app-mini-banner [title]="'Divulgar Pet'" [description]="'Sou ONG e quero divulgar meus pets ou receber mantimento'" 
+                    backgroundImage="../../../../assets/megaphone.png"></app-mini-banner> <!-- Associação com componente -->
+</div>
+
 <app-adoption-process-banner></app-adoption-process-banner> <!-- Associação com componente -->
 <div class="button-center" >
     <a routerLink="catalog"> <button mat-raised-button color="primary"> Conheça os Pets </button> </a>
