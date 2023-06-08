@@ -1,4 +1,7 @@
 
-Œ
-java:S2293!"YReplace the type specification in this constructor call with the diamond operator ("<>").( ËĞ¨8‹ºé€…1HÛRMINORZ
+z
+java:S1128"ARemove this unused import 'jakarta.validation.constraints.Email'.(Öï¤Âıÿÿÿÿ8ÄšµÀ‰1HÊŠRMINORZ
+CODE_SMELL
+
+java:S2293""YReplace the type specification in this constructor call with the diamond operator ("<>").( ËĞ¨8‹ºé€…1HŠRMINORZ
 CODE_SMELL

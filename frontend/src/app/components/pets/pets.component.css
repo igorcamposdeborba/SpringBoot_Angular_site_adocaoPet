@@ -47,3 +47,7 @@ h1 {
     width: 320px;
     margin: auto;
 }
+
+li {
+    list-style-type: circle;
+}

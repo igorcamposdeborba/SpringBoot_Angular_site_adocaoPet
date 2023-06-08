@@ -1,10 +1,13 @@
 package com.adocao.pet.services;
 
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import com.adocao.pet.entities.Adopter;
 import com.adocao.pet.entities.AdopterPetAssociation;
 import com.adocao.pet.entities.Pet;
@@ -14,6 +17,7 @@ import com.adocao.pet.repositories.AdopterRepository;
 import com.adocao.pet.repositories.PetRepository;
 import com.adocao.pet.services.exceptions.IllegalFormatException;
 import com.adocao.pet.services.exceptions.ObjectNotFoundException;
+
 import jakarta.validation.Valid;
 
 @Service // injetar instancias em outras partes do código
@@ -46,9 +50,14 @@ public class AdopterService {
 	// !! REVISAR ver se devo implementar no AdopterDTO e aqui o relacionamento com AdopterPetAssociation E ao invés do AdopterPetAssociation salvar uma nova linha, ele atualiza o e-mail daquele usuário se já existe o e-mail para aquele Pet no banco de dados
 	// ADICIONA recurso no banco de dados
 	public Adopter create(Integer idPet, @Valid AdopterDTO adopterDTO) {
+		// Validações dos campos obrigatórios
+		validateEmail(adopterDTO);
+		validateIsPresentName(adopterDTO);
+		validateTelephone(adopterDTO);
+		
 		// UPDATE: Validar se já existe o adopter no banco de dados pelo e-mail, se sim, só atualizar os dados que o adopter enviou.
 		Optional<Adopter> varAdopterOnDatabase = adopterRepository.findByEmail(adopterDTO.getEmail());
-		
+
 		if (adopterDTO != null && varAdopterOnDatabase.isPresent() && adopterDTO.getEmail().equalsIgnoreCase(varAdopterOnDatabase.get().getEmail())) { // verificar se existe o cadastro daquele e-mail
 				return update(idPet, adopterDTO); // ATUALIZAR cadastro
 				
@@ -97,8 +106,40 @@ public class AdopterService {
 		Optional<Pet> varPet = petRepository.findById(idPet);
 		
 		// ATUALIZAR DateRequest: buscar no banco de dados se já tem o Adopter na entity associativa. Se estiver, só atualizar o dateRequest (data e hora do pedido de adoção)
-		Optional<AdopterPetAssociation> varAdopterDateRequest = adopterPetAssociationRepository.findByAdopterId(adopterObj.getId()); // buscar na classa associativa se existe o Adopter para atualizar o dateRequest
-		if (varAdopterDateRequest.isPresent()) { 
+		//Optional<AdopterPetAssociation> varAdopterDateRequest = adopterPetAssociationRepository.findByAdopterId(adopterObj.getId()); // buscar na classa associativa se existe o Adopter para atualizar o dateRequest
+		ArrayList<AdopterPetAssociation> varAdopterDateRequest = new ArrayList<>();
+		varAdopterDateRequest = adopterPetAssociationRepository.findByAdopterId(adopterObj.getId()); // buscar na classa associativa se existe o Adopter para atualizar o dateRequest
+		
+		// Atualizar DateRequest (EDITAR)
+		for (int i=0; i<varAdopterDateRequest.size(); i++) {
+			if (varAdopterDateRequest != null && varAdopterDateRequest.get(i).getPet().getId() == idPet) {
+				varAdopterDateRequest.get(i).changeDateRequest(Instant.now());
+				
+				// Atualizar nome do Adopter nos objetos Adopter e classe associativa AdopterPetAssociation
+				adopterRepository.save(varAdopterDateRequest.get(i).getAdopter().setAdopter(adopterObj)); // Atualizar dados na classe Adopter
+				varAdopterDateRequest.get(i).updateAdopter(adopterObj); // atualizar nome do Adopter na classe associativa AdopterPetAssociation
+				
+				return adopterPetAssociationRepository.save(varAdopterDateRequest.get(i)); // Salvar no banco de dados a classe de associação
+
+			}
+		}
+		// CRIAR REGISTRO: criar nova linha porque não tem esse usuário na classe associativa AdopterPet
+		// Converter DTO para Objeto e atribuir Objetos
+		AdopterPetAssociation adopterPetAssociation = new AdopterPetAssociation(); // criar data e hora do request
+		adopterPetAssociation.setAdopter(adopterObj); // atribuir objeto Adopter
+
+		Pet petObj = null;
+		if (varPet.isPresent()) {
+			petObj = varPet.orElse(null);
+		}
+		adopterPetAssociation.setPet(petObj); // atribuir objeto Pet
+		
+		return adopterPetAssociationRepository.save(adopterPetAssociation); // Salvar no banco de dados a classe de associação
+
+		
+		//if (varAdopterDateRequest.isPresent()) {
+		/*
+		if (varAdopterDateRequest.isPresent() && varAdopterDateRequest.get().getPet().getId() == idPet) {
 			varAdopterDateRequest.get().changeDateRequest(Instant.now());
 			
 			return adopterPetAssociationRepository.save(varAdopterDateRequest.get()); // Salvar no banco de dados a classe de associação
@@ -116,7 +157,7 @@ public class AdopterService {
 			adopterPetAssociation.setPet(petObj); // atribuir objeto Pet
 			
 			return adopterPetAssociationRepository.save(adopterPetAssociation); // Salvar no banco de dados a classe de associação
-		}	
+		}*/
 	}
 	
 	
@@ -143,6 +184,9 @@ public class AdopterService {
 		if (adopterDTO.getName() == null) { // Validar se existe o nome do adotante no parâmetro para a requisição
 			throw new NullPointerException("O campo NOME é obrigatório");
 		}
+		if (adopterDTO.getName().equals(" ")) { // Validar se o nome não tem só um espaço em branco
+			throw new NullPointerException("O campo NOME não pode estar vazio");
+		}
 	}
 	
 	// Validar o valor (formatação) do telefone. Admite repetição de telefone no banco de dados porque duas pessoas podem ter o mesmo telefone residencial ou celular
@@ -155,7 +199,10 @@ public class AdopterService {
 			throw new IllegalFormatException("Formato errado de TELEFONE. Exemplo: 55 48 981784550. Não use o telefone do exemplo.");
 		}
 		
-		if (adopterDTO.getTelephone().matches("^((?=[A-Z|a-z]).)*$") == false && adopterDTO.getTelephone().length() > 19) { // Regex validate telephone's value.
+		if (adopterDTO.getTelephone().matches("(?=[A-Z|a-z]).*")) { // Regex para validar se telefone tem letra
+			throw new IllegalFormatException("Formato errado de TELEFONE. Exemplo: 55 48 98178455");
+		}
+		if (adopterDTO.getTelephone().length() > 19 || adopterDTO.getTelephone().length() < 8) { // Regex para validar tamanho máximo e mínimo do telefone
 			throw new IllegalFormatException("Formato errado de TELEFONE. Exemplo: 55 48 98178455");
 		}
 	}

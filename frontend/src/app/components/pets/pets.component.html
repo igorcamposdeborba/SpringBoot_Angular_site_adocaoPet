@@ -5,12 +5,14 @@
             <img class="image" src="{{ELEMENT_DATA_PET.image}}" alt="{{ELEMENT_DATA_PET.name}}">
             <div id="container-list">
                 <h1>{{ ELEMENT_DATA_PET.name }}</h1>
-                <button mat-raised-button color="primary" id="button-cta"> Adotar </button>
+                <button mat-raised-button color="primary" id="button-cta" (click)="openDialog()"> Adotar </button>
                 ONG: {{ELEMENT_DATA_PET.nameOng}}<br/>
-               <!-- <img src="" alt="{{ELEMENT_DATA_PET.size}}"/> --> <span class="bold">Porte</span>: {{ELEMENT_DATA_PET.size}} <br/>
-               <!-- <img src="" alt="{{ELEMENT_DATA_PET.gender}}"/> --> <span class="bold">Gênero</span>: {{ELEMENT_DATA_PET.gender}} <br/>
-               <!-- <img src="" alt="{{ELEMENT_DATA_PET.health}}"/> --> <span class="bold">Saúde</span>: {{ELEMENT_DATA_PET.health}} <br/>
-               <!-- <img src="" alt="{{ELEMENT_DATA_PET.temperament}}"/> --> <span class="bold">Temperamento</span>: {{ELEMENT_DATA_PET.temperament}} <br/>
+               <ul>
+                    <li><span class="bold">Porte</span>: {{ELEMENT_DATA_PET.size}} <br/></li>
+                    <li><span class="bold">Gênero</span>: {{ELEMENT_DATA_PET.gender}} <br/></li>
+                    <li><span class="bold">Saúde</span>: {{ELEMENT_DATA_PET.health}} <br/></li>
+                    <li><span class="bold">Temperamento</span>: {{ELEMENT_DATA_PET.temperament}} <br/></li>
+               </ul>
             </div>
         </div>
     </div>
@@ -19,7 +21,7 @@
 
 <aside>
     <div class="dimension">
-        <app-mini-banner [title]="'Doar mantimentos'" [description]="'Ajude com rações, medicamentos, materiais de limpeza etc'"
+        <app-mini-banner [url]="'/doacao'" [title]="'Doar mantimentos'" [description]="'Ajude com rações, medicamentos, materiais de limpeza etc'"
         backgroundImage="../../../../assets/heart.png"></app-mini-banner> <!-- Associação com componente -->
     </div>
 

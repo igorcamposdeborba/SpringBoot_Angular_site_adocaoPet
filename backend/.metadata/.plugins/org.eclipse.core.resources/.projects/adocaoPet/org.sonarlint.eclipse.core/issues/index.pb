@@ -69,3 +69,5 @@ z
 Jsrc/main/java/com/adocao/pet/services/exceptions/NullPointerException.java,2\c\2c900e6c7268b6a87cb381ec62ba8dbf8e2c7196
 l
 <src/main/java/com/adocao/pet/services/CorsOriginService.java,8\0\8010df04be623f26f3c1a525ec9e4d5dcc3e72bb
+…
+Usrc/main/java/com/adocao/pet/services/exceptions/MethodArgumentNotValidException.java,3\0\302948f6536be5d18f2c379d45456597dbb5bd94

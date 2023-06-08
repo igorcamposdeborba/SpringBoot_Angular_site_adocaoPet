@@ -11,6 +11,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 
 @Entity
@@ -79,6 +80,12 @@ public class Adopter implements Serializable {
 	}
 	public void setTelephone(String telephone) {
 		this.telephone = telephone;
+	}
+	public Adopter setAdopter(Adopter adopter) { // REVISAR
+		this.name = adopter.getName();
+		this.email= adopter.getEmail();
+		this.telephone = adopter.getTelephone();
+		return new Adopter(adopter.getId(), adopter.getName(), adopter.getEmail(), adopter.getTelephone());
 	}
 
 	public Set<AdopterPetAssociation> getAllDateRequestAdotation(){

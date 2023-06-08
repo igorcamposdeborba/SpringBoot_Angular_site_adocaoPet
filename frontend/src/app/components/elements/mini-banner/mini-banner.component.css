@@ -27,7 +27,7 @@ a {
     grid-area: image;
     width: 53px;
     height: 53px;
-    margin: 40px auto 0;
+    margin: 10px auto 0;
     background-size: contain;
     background-repeat: no-repeat;
 }

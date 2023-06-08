@@ -38,6 +38,7 @@ import { PetsComponent } from './components/pets/pets.component';
 import { DoacaoComponent } from './components/static-pages/doacao/doacao.component';
 import { OngComponent } from './components/static-pages/ong/ong.component';
 import { CookiesComponent } from './components/static-pages/cookies/cookies.component';
+import { FormAdopterComponent } from './components/static-pages/form-adopter/form-adopter.component';
 
 
 
@@ -53,7 +54,8 @@ import { CookiesComponent } from './components/static-pages/cookies/cookies.comp
     PetsComponent,
     DoacaoComponent,
     OngComponent,
-    CookiesComponent 
+    CookiesComponent,
+    FormAdopterComponent 
   ],
   imports: [
     BrowserModule,

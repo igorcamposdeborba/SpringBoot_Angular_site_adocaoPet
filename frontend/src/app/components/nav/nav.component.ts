@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CookiesComponent } from '../static-pages/cookies/cookies.component';
-import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import {MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-nav',
@@ -10,7 +10,7 @@ import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 export class NavComponent implements OnInit {
   private timer : any;
 
-  constructor(public dialog: MatDialog){
+  constructor(private dialog: MatDialog){
   }
   
   ngOnInit(): void { // ciclo de vida: ao iniciar o componente

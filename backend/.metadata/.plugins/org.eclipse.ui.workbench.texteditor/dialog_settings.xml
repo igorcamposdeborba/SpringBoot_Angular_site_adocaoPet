@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="mave"/>
+		<item key="selection" value=""/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="system.out"/>
+			<item value="adopterObj"/>
+			<item value="MethodArgumentNotValidException"/>
+			<item value="associativa"/>
+			<item value="ServletComponentScan"/>
+			<item value="akarta.servlet-ap"/>
+			<item value="servlet"/>
+			<item value="ProxyServlet"/>
+			<item value="htt"/>
+			<item value="WebMvcConfigurer "/>
+			<item value="auto"/>
 			<item value="mave"/>
 			<item value="ccess-Control-Allow-Origi"/>
 			<item value="atasdacasa"/>
 			<item value="image"/>
-			<item value="adopt"/>
-			<item value="pet"/>
-			<item value="newObj"/>
-			<item value="addPetAdopter"/>
-			<item value="adopterDTO"/>
-			<item value="toString"/>
-			<item value="ADOPTERpET"/>
-			<item value="adopterPet"/>
-			<item value="Adopter"/>
-			<item value="setAdop"/>
-			<item value="adopterValidatedByEmail"/>
 		</list>
 		<list key="replacehistory">
 		</list>

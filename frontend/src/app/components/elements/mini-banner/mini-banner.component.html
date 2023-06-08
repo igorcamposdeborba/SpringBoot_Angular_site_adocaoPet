@@ -1,6 +1,6 @@
 <aside class="banner">
     <div class="title">
-        <a routerLink="/doacao">
+        <a  routerLink="{{url}}" (click)="scrollToTop()">
             <div [style.background-image]="'url(' + backgroundImage + ')'" class="image"></div>
             <h3>{{title}}</h3>
             <p>{{description}}</p>

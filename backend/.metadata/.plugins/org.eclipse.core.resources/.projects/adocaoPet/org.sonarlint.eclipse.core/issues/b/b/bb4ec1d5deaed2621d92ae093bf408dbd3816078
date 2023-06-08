@@ -1,15 +1,22 @@
 
-i
-java:S25894"7Remove this expression which always evaluates to "true"(ë”»98šç…†1H~RMAJORZ
+p	java:S125Œ"<This block of commented-out lines of code should be removed.(Ï¯úİ8º¯ï‰1Hæ‰RMAJORZ
 CODE_SMELL
-_
-java:S1172G",Remove this unused method parameter "idPet".(Ö èØ8¡‹„–†1H~RMAJORZ
+n
+java:S4973s"<Strings and Boxed types should be compared using "equals()".(‹‰èîıÿÿÿÿ8î†¦Ÿ‰1Hõ‰RMAJORZBUG
+p
+java:S2589s"7Remove this expression which always evaluates to "true"(‹‰èîıÿÿÿÿ8î†¦Ÿ‰1Hà‰RMAJORZ
 CODE_SMELL
-[
-java:S1125"'Remove the unnecessary boolean literal.(ìñ¯å8ÿßÖì…1H’~RMINORZ
+j
+java:S2589="7Remove this expression which always evaluates to "true"(ë”»98šç…†1Hİ‰RMAJORZ
 CODE_SMELL
-v
-java:S1854I">Remove this useless assignment to local variable "newAdopter".(«ıÒÊùÿÿÿÿ8£ïÃ…†1H•~RMAJORZ
+w
+java:S1854R">Remove this useless assignment to local variable "newAdopter".(«ıÒÊùÿÿÿÿ8£ïÃ…†1HÛ‰RMAJORZ
 CODE_SMELL
+~
+java:S3655H"LCall "varPet.isPresent()" or "!varPet.isEmpty()" before accessing the value.(„ñ‹íıÿÿÿÿ8µâ£„†1Hò‰RMAJORZBUG
 }
-java:S3655?"LCall "varPet.isPresent()" or "!varPet.isEmpty()" before accessing the value.(„ñ‹íıÿÿÿÿ8µâ£„†1H–~RMAJORZBUG
+java:S1854n"IRemove this useless assignment to local variable "varAdopterDateRequest".(€…ûÃ8Ì÷œŸ‰1HÜ‰RMAJORZ
+CODE_SMELL
+`
+java:S1172P",Remove this unused method parameter "idPet".(Ö èØ8¡‹„–†1Hó‰RMAJORZ
+CODE_SMELL

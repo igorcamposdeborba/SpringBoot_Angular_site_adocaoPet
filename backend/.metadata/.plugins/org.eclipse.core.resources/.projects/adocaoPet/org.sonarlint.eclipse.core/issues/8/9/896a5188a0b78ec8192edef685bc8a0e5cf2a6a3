@@ -1,20 +1,17 @@
 
-`
-java:S1172?"-Remove this unused method parameter "petDTO".(°ð¨§8»ââÿ…1HÀTRMAJORZ
+o	java:S1256"<This block of commented-out lines of code should be removed.(ƒóù8»ââÿ…1HöŠRMAJORZ
 CODE_SMELL
-n	java:S1250"<This block of commented-out lines of code should be removed.(ƒóù8»ââÿ…1HÂTRMAJORZ
+Š
+java:S1450'"VRemove the "petName" field and declare it as a local variable in the relevant methods.(‹¨ú8¾ãÿ˜†1HìŠRMINORZ
 CODE_SMELL
-’
-java:S1450&"ZRemove the "adopterName" field and declare it as a local variable in the relevant methods.(ÀéË›úÿÿÿÿ8¾ãÿ˜†1HÄsRMINORZ
+h
+java:S1068&"/Remove this unused "adopterName" private field.(ÀéË›úÿÿÿÿ8¾ãÿ˜†1HðŠRMAJORZ
 CODE_SMELL
-g
-java:S1068&"/Remove this unused "adopterName" private field.(ÀéË›úÿÿÿÿ8¾ãÿ˜†1HÌsRMAJORZ
+n	java:S125K"<This block of commented-out lines of code should be removed.(ºþÆ#8»ââÿ…1H‰‹RMAJORZ
 CODE_SMELL
-m	java:S125E"<This block of commented-out lines of code should be removed.(ºþÆ#8»ââÿ…1HÏTRMAJORZ
+_
+java:S1068'"+Remove this unused "petName" private field.(‹¨ú8¾ãÿ˜†1HóŠRMAJORZ
 CODE_SMELL
-^
-java:S1068'"+Remove this unused "petName" private field.(‹¨ú8¾ãÿ˜†1HÏsRMAJORZ
-CODE_SMELL
-‰
-java:S1450'"VRemove the "petName" field and declare it as a local variable in the relevant methods.(‹¨ú8¾ãÿ˜†1HÈsRMINORZ
+a
+java:S1172E"-Remove this unused method parameter "petDTO".(°ð¨§8»ââÿ…1H‡‹RMAJORZ
 CODE_SMELL

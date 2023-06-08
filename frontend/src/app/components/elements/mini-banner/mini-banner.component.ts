@@ -9,6 +9,7 @@ export class MiniBannerComponent {
   @Input() title : string;
   @Input() description : string;
   @Input() backgroundImage : string;
+  @Input() url : string;
 
   constructor(){
   }
@@ -17,4 +18,7 @@ export class MiniBannerComponent {
 
   }
 
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

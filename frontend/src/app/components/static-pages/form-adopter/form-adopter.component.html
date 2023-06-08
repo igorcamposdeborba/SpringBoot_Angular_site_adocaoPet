@@ -1,0 +1,18 @@
+<div id="container">
+    <h2>Me adota</h2>
+    <mat-form-field>
+        <mat-label class="center">Nome completo do adotante</mat-label>
+        <input type="text" matInput [(ngModel)]="name" required>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label class="center">E-mail</mat-label>
+        <input type="email" matInput [(ngModel)]="email" required>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label class="center">Telefone</mat-label>
+        <input type="text" matInput [(ngModel)]="telephone" required>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" class="center" (click)="submitForm([lastNumber])" [disabled]="!verifyRequiredFields()">Enviar</button>
+    <small class="center"><br/>Após o envio, aguarde a ONG entrar em contato</small>
+</div>

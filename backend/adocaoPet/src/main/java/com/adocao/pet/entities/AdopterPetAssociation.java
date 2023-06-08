@@ -44,6 +44,12 @@ public class AdopterPetAssociation implements Serializable { // Serializable par
 		this.id = null;
 		this.dateRequest = Instant.now(); // Ao criar associação do objeto, já adiciona a data atual do pedido de adoção	
 	}
+	public AdopterPetAssociation(String adopterName) {
+		super();
+		this.id = null;
+		this.dateRequest = Instant.now(); // Ao criar associação do objeto, já adiciona a data atual do pedido de adoção	
+		this.adopterName = adopterName; // Atualizar nome do Adopter
+	}
 	
 	/*public AdopterPetAssociation(Adopter adopter, Pet pet) {
 		this.adopter.setId(adopter.getId());	// REVISAR para ver se é para adicionar nesse construtor os atributos do relacionamento das duas entities
@@ -101,10 +107,17 @@ public class AdopterPetAssociation implements Serializable { // Serializable par
 	public Pet getPet(){
 		return pet;
 	}
-	public void setAdopter(Adopter adopter) {
+	public void setAdopter(Adopter adopter) { // REVISAR porque já tem o updateAdopter
 		this.adopter = adopter;
 		this.adopterName = adopter.getName();
 	}
+	public Adopter updateAdopter(Adopter adopter) { // atualizar nome do Adopter
+		this.adopter = adopter;
+		this.adopterName = adopter.getName();
+		
+		return adopter;
+	}
+	
 	public void setPet(Pet pet) {
 		this.pet = pet;
 		this.petName = pet.getName();

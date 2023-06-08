@@ -21,11 +21,12 @@ nav {
 }
 
 #logo {
-    background-image: url("https://upload.wikimedia.org/wikipedia/pt/9/91/Lp_logo_unisinos.png");
-    width: 150px;
+    background-image: url("https://logospng.org/download/petlove/pet-love-4096.png");
+    width: 125px;
     height: 40px;
     margin: 5px 0 0 5px;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
 }
 #logo:hover {

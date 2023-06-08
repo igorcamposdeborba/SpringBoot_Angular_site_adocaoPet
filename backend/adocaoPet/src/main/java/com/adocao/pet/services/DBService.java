@@ -55,7 +55,8 @@ public class DBService {
 		
 		// Instanciar objetos para pré-popular o banco de dados
 		Ong ong1 = new Ong(null, "Adote POA", "adotepoa@hotmail.com", "(51) 981789290", "www.instagram.com/adotepoa", "Carla da Silva");
-		Ong ong2 = new Ong(null, "Ong Garra", "ongagarra@yahoo.com.br", "(48) 30758967", "https://www.onggarra.com", "Eduardo Torres");
+		Ong ong2 = new Ong(null, "Garra", "ongagarra@yahoo.com.br", "(48) 30758967", "https://www.onggarra.com", "Eduardo Torres");
+		Ong ong3 = new Ong(null, "Porto Filhote", "portofilhote@hotmail.com", "(51) 99874895", "https://www.portofilhote.com.br/", "Philip Kotler");
 		
 		 // Acessar imagem da url
 		/*byte[] image1, image2;
@@ -79,14 +80,14 @@ public class DBService {
 		String image9 = "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/rockcms/2022-01/210602-doge-meme-nft-mb-1715-8afb7e.jpg";
 		
 		Pet pet1 = new Pet(null, "Rex", image1 , Size.M, Gender.MACHO, healthPet1, 4,  "Dócil e ativo", ong1);
-		Pet pet2 = new Pet(null, "Flora", image2, Size.P, Gender.FEMEA, healthPet2, 0, "Ativa", ong1);
+		Pet pet2 = new Pet(null, "Flora", image2, Size.P, Gender.FEMEA, healthPet2, 0, "Ativa", ong3);
 		Pet pet3 = new Pet(null, "Bidu", image3, Size.G, Gender.MACHO, healthPet3, 2, "Ativo, um pouco desconfiado e ama passear", ong2);
-		Pet pet4 = new Pet(null, "Nina", image4, Size.M, Gender.FEMEA, healthPet4, 7, "Ativa e sociável", ong1);
-		Pet pet5 = new Pet(null, "Max", image5, Size.G, Gender.MACHO, healthPet2, 12, null, ong2);
+		Pet pet4 = new Pet(null, "Nina", image4, Size.M, Gender.FEMEA, healthPet4, 7, "Ativa e sociável", ong3);
+		Pet pet5 = new Pet(null, "Max", image5, Size.M, Gender.MACHO, healthPet2, 12, null, ong2);
 		Pet pet6 = new Pet(null, "Mike", image6, Size.P, Gender.MACHO, healthPet1, 5, "Ativo, dócil, não é acostumado a outros animais", ong1);
-		Pet pet7 = new Pet(null, "Simba", image7, Size.G, Gender.MACHO, healthPet3, 7, null, ong2);
+		Pet pet7 = new Pet(null, "Simba", image7, Size.G, Gender.MACHO, healthPet3, 7, null, ong3);
 		Pet pet8 = new Pet(null, "Lili", image8, Size.G, Gender.FEMEA, healthPet4, 2, "Dócil e carinhosa", ong1);
-		Pet pet9 = new Pet(null, "Fred", image9, Size.M, Gender.MACHO, healthPet1, 5, "Dócil, tranquilo e carinhoso", ong2);
+		Pet pet9 = new Pet(null, "Fred", image9, Size.M, Gender.MACHO, healthPet1, 5, "Dócil, tranquilo e carinhoso", ong3);
 		
 		
 		Adopter adopter1 = new Adopter(null, "Daniela da Silva", "daniela@yahoo.com.br", "55 51 981547895");
@@ -97,7 +98,7 @@ public class DBService {
 		adopterPet1.setAdopter(adopter1);
 		
 		
-		ongRepository.saveAll(Arrays.asList(ong1, ong2));
+		ongRepository.saveAll(Arrays.asList(ong1, ong2, ong3));
 		petRepository.saveAll(Arrays.asList(pet1, pet2, pet3, pet4, pet5, pet6, pet7, pet8, pet9));
 		adopterRepository.saveAll(Arrays.asList(adopter1, adopter2));
 		adopterPetRepository.saveAll(Arrays.asList(adopterPet1));
