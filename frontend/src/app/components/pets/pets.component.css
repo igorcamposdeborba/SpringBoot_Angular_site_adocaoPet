@@ -20,12 +20,17 @@ h1 {
 }
 .grid-container-images {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     justify-items: left;
     gap: 45px 10px;
 }
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+.grid-container-images {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 800px) {
 .grid-container-images {
     grid-template-columns: 1fr;
     width: 100%;
