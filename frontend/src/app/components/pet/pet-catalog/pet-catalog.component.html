@@ -6,7 +6,7 @@
             <div *ngFor="let index of ELEMENT_DATA_PET; index as i">
 
                 <a routerLink="pets/{{ELEMENT_DATA_PET[i].id}}">
-                   <img class="image" src="{{ELEMENT_DATA_PET[i].image}}" alt="{{ELEMENT_DATA_PET[i].name}}">
+                   <img class="image" src="{{ELEMENT_DATA_PET[i].image}}" alt="{{ELEMENT_DATA_PET[i].name}}" loading="lazy" fetchpriority="low"> <!-- Tags HTML 5 loading e fetchpriority para acelerar performance (velocidade) -->
                     <div class="caption"> <div class="caption-title"><strong> {{ ELEMENT_DATA_PET[i].name }} </strong></div> </div>
                 </a>
             </div>

@@ -1,15 +1,29 @@
-.banner {  display: grid;
+.banner {  
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     
     grid-template-areas:
       "title image"
       "title image"
-  }
+}
+@media (max-width: 900px) {
+.banner {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 2vw;
+    row-gap: 2vw;
+
+    grid-template-areas:
+      "title"
+      "image"
+}
+}
   
 .title { 
     grid-area: title;
     margin: auto;
+    padding: 0 2vw;
 }
 .title > h1 {
     font-size: 2.5em;

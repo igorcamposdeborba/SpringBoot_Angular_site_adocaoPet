@@ -1,7 +1,7 @@
 <aside class="banner">
     <div class="title">
         <a  routerLink="{{url}}" (click)="scrollToTop()">
-            <div [style.background-image]="'url(' + backgroundImage + ')'" class="image"></div>
+            <div [style.background-image]="'url(' + backgroundImage + ')'" class="image" loading="lazy" fetchpriority="low"></div> <!-- Tags HTML 5 loading e fetchpriority para acelerar performance (velocidade) -->
             <h3>{{title}}</h3>
             <p>{{description}}</p>
         </a>

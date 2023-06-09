@@ -1,5 +1,7 @@
 #cookies-modal {
     margin: 3vw 4vw;
+    max-height: 90vh; 
+    overflow-y: auto;
 }
 h1 {
     margin-bottom: 2vw; 

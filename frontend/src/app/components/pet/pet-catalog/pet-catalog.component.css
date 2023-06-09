@@ -17,6 +17,11 @@ a {
     grid-template-columns: repeat(3, 1fr);
     gap: 45px 10px;
 }
+@media (max-width: 900px) {
+.grid-container-images {
+    grid-template-columns: 1fr 1fr;
+}
+}
 .image {
     border-radius: 2.5%;
     object-fit: cover;
