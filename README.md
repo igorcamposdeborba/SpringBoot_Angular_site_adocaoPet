@@ -1,27 +1,43 @@
 # Adocaopet
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
+PROGRAMAS PADRÃO:
+- Instalar NPM
+npm install -g npm@latest
 
-## Development server
+- Instalar Node última versão
+https://nodejs.org/en/download
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Instalar NVM (Para mudar  versão do Node em tempo de execução)
+Download e instale nvm-setup.exe no link https://github.com/coreybutler/nvm-windows/releases
 
-## Code scaffolding
+- Instalar node na versão 12.14.1
+nvm install 12.14.1
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Usar o node na versão 12.14.1
+nvm use 12.14.1
 
-## Build
+- Instalar plugin no Chrome ou edge para aceitar CORS origin em servidor local E ativar plugin clicando nele:
+https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf/related?hl=pt
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+____________________
+ANGULAR:
+- Instalar Angular por linha de comando:
+npm install -g @angular/cli@12.0.3
+OU
+npm install -g @angular/cli@latest
 
-## Running unit tests
+- Novo projeto Angular (sem arquivos de teste)
+ng new adocaopet --minimal
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Iniciar Angular
+ng serve
+OU se estiver rodando localmente (localhost) - neste projeto é opcional porque eu implementei p/ aceitar CORS origin no Angular e Spring:
+ng serve --proxy-config proxy.config.js
 
-## Running end-to-end tests
+_____________________
+ANGULAR GERAR COMPONENTES:
+- Criar Componente:
+ng generate component components/nav
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Criar Service:
+ng generate service services/pet
