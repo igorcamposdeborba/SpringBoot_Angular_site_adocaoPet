@@ -13,7 +13,7 @@ import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletResponse;
 
 @WebFilter("/*")
-@Order(1) // Defina a ordem de execução do filtro
+@Order(1) // Define a ordem de execução do filtro
 public class CorsOriginService implements Filter {
 
 	@Override

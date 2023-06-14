@@ -1,6 +1,6 @@
 
-t	java:S125"<This block of commented-out lines of code should be removed.(îçÊİüÿÿÿÿ8¯´³—‰1H…RMAJORZ
+t	java:S125"<This block of commented-out lines of code should be removed.(îçÊİüÿÿÿÿ8¯´³—‰1H¿˜RMAJORZ
 CODE_SMELL
 ˜
-java:S1488"_Immediately return this expression instead of assigning it to the temporary variable "petList".(¯¡¶¹ùÿÿÿÿ8¯´³—‰1H‚RMINORZ
+java:S1488"_Immediately return this expression instead of assigning it to the temporary variable "petList".(¯¡¶¹ùÿÿÿÿ8¯´³—‰1HÂ˜RMINORZ
 CODE_SMELL

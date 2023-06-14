@@ -25,12 +25,6 @@ public class PetService {
 	public List<Pet> findAll(){
 		List<Pet> petList = petRepository.findAll(); // buscar Pets no banco de dados
 		
-		/*for (Pet i : petList) { // converter cada imagem em Base64
-			byte[] image = i.getImage();
-			String Base64String = Base64.getEncoder().encodeToString(image); // Codificar para Base64 (formato reconhecido pelo front-end/Angular)
-			i.setImage(Base64String.getBytes()); // codificar em bytes para o JSON
-		}*/
-		
 		return petList;
 	}
 

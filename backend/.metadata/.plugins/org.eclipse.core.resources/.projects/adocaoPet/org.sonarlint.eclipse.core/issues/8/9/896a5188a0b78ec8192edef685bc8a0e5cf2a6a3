@@ -1,17 +1,18 @@
 
-o	java:S1256"<This block of commented-out lines of code should be removed.(ƒóù8»ââÿ…1HöŠRMAJORZ
+o	java:S125:"<This block of commented-out lines of code should be removed.(ƒóù8»ââÿ…1HÙ®RMAJORZ
 CODE_SMELL
-Š
-java:S1450'"VRemove the "petName" field and declare it as a local variable in the relevant methods.(‹¨ú8¾ãÿ˜†1HìŠRMINORZ
+|
+java:S1128	"HRemove this unused import 'com.fasterxml.jackson.annotation.JsonIgnore'.(ş‘‹„8°ë„‹1Hæ®RMINORZ
 CODE_SMELL
-h
-java:S1068&"/Remove this unused "adopterName" private field.(ÀéË›úÿÿÿÿ8¾ãÿ˜†1HğŠRMAJORZ
-CODE_SMELL
-n	java:S125K"<This block of commented-out lines of code should be removed.(ºşÆ#8»ââÿ…1H‰‹RMAJORZ
-CODE_SMELL
-_
-java:S1068'"+Remove this unused "petName" private field.(‹¨ú8¾ãÿ˜†1HóŠRMAJORZ
+†
+java:S1128
+"RRemove this unused import 'com.fasterxml.jackson.annotation.JsonManagedReference'.(Æ˜µ8›Æ×‹1Hè®RMINORZ
 CODE_SMELL
 a
-java:S1172E"-Remove this unused method parameter "petDTO".(°ğ¨§8»ââÿ…1H‡‹RMAJORZ
+java:S1172I"-Remove this unused method parameter "petDTO".(°ğ¨§8»ââÿ…1Hê®RMAJORZ
+CODE_SMELL
+ˆ
+java:S1128"ORemove this unused import 'com.fasterxml.jackson.annotation.JsonBackReference'.(»Ôœ¿ıÿÿÿÿ8›Æ×‹1Hì®RMINORZ
+CODE_SMELL
+n	java:S125O"<This block of commented-out lines of code should be removed.(ºşÆ#8»ââÿ…1Hî®RMAJORZ
 CODE_SMELL

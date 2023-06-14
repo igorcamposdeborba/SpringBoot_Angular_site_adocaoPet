@@ -1,9 +1,13 @@
 package com.adocao.pet.controllers;
 
 import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -13,7 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.adocao.pet.entities.Adopter;
 import com.adocao.pet.entities.AdopterPetAssociation;
+import com.adocao.pet.entities.Pet;
 import com.adocao.pet.entities.dtos.AdopterDTO;
+import com.adocao.pet.entities.dtos.AdopterPetAssociationDTO;
+import com.adocao.pet.entities.dtos.PetDTO;
 import com.adocao.pet.services.AdopterService;
 
 import jakarta.validation.Valid;
@@ -28,7 +35,7 @@ public class AdopterController {
 	
 	
 	// Endpoint POST ADICIONAR Adopter
-	@PostMapping (value = "/{idpet}")																 // endpoint recebe/aceita o JSON do formato DTO da classe AdopterDTO
+	@PostMapping (value = "/{idpet}")	// endpoint recebe/aceita o JSON do formato DTO da classe AdopterDTO
 	public ResponseEntity<AdopterDTO> create(@PathVariable Integer idpet, @Valid @RequestBody AdopterDTO objAdopterDTO){ // @Valid valida as annotations @NotNull do AdopterDTO
 		
 		Adopter newAdopterObj = adopterService.create(idpet, objAdopterDTO); // Salvar na tabela Adopter do banco de dados
@@ -47,5 +54,5 @@ public class AdopterController {
 		AdopterPetAssociation adopterPetAssociation = adopterService.addPetAdopter(idpet, newAdopterObj); // salvar na tabela associativa AdopterPet
 		
 		return ResponseEntity.ok().body(new AdopterDTO(newAdopterObj)); // Response para o usuário de que atualizou o objeto.  E o objeto foi convertido de DTO para Adopter
-	} 
+	}
 }

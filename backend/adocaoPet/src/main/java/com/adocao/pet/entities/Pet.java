@@ -28,8 +28,6 @@ public class Pet implements Serializable { // Serializable para trafegar em rede
 	@GeneratedValue (strategy = GenerationType.IDENTITY) // Banco de dados gera id
 	private Integer id;
 	private String name;
-	// @Lob // Blob: dados binários para diminuir o espaço ocupado na imagem no banco de dados e evitar que fique uma string gigante banco de dados
-	// private byte[] image;
 	@Column(columnDefinition = "TEXT") // define a coluna  para o tipo TEXT no banco de dados para armazenar grandes strings maios que 255 caracteres
 	private String image;
 	
@@ -42,9 +40,6 @@ public class Pet implements Serializable { // Serializable para trafegar em rede
 	// Agregação: para relacionamento
 	@ManyToOne // Pet conhece a ONG, mas ao contrário não. Por isso não preciso de mappedBy
 	private Ong ong;
-	
-	//@OneToOne(mappedBy = "pet")
-	//private AdopterPetAssociation adopterPetAssociation;
 	
 	
 	public Pet() { // construtor vazio para superclasse Serializable &&  protected porque Class, Package e Subclass podem acessar
@@ -125,8 +120,7 @@ public class Pet implements Serializable { // Serializable para trafegar em rede
 	public void setTemperament(String temperament) {
 		this.temperament = temperament;
 	}
-	// Notas: 1) Não preciso do métodos setId, setName, setImage... porque não uso para criar ou editar um Pet
-	// 2) O Pet não conhece seu Adopter porque não há telas (e requests) a partir do pet para saber ou mostrar seu adopter no site
+	// Nota: 1) O Pet não conhece seu Adopter porque não há telas (e requests) a partir do pet para saber ou mostrar seu adopter no site 
 	
 	public Ong getOng() {
 		return ong;

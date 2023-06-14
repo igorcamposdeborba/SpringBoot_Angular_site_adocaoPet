@@ -1,8 +1,8 @@
 
-s	java:S125+"<This block of commented-out lines of code should be removed.(ŠÆäˆûÿÿÿÿ8Å­å¤†1H…}RMAJORZ
+o	java:S125\"<This block of commented-out lines of code should be removed.(è½àü8ßæ¤†1HŠ¯RMAJORZ
 CODE_SMELL
-n	java:S125\"<This block of commented-out lines of code should be removed.(è½àü8ßæ¤†1H†}RMAJORZ
+’
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(­§µúøÿÿÿÿ8ë†ëÒ…1H¯RMINORZ
 CODE_SMELL
-‘
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(­§µúøÿÿÿÿ8ë†ëÒ…1HŒ}RMINORZ
+t	java:S125+"<This block of commented-out lines of code should be removed.(ŠÆäˆûÿÿÿÿ8Å­å¤†1H’¯RMAJORZ
 CODE_SMELL

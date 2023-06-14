@@ -58,17 +58,6 @@ public class DBService {
 		Ong ong2 = new Ong(null, "Garra", "ongagarra@yahoo.com.br", "(48) 30758967", "https://www.onggarra.com", "Eduardo Torres");
 		Ong ong3 = new Ong(null, "Porto Filhote", "portofilhote@hotmail.com", "(51) 99874895", "https://www.portofilhote.com.br/", "Philip Kotler");
 		
-		 // Acessar imagem da url
-		/*byte[] image1, image2;
-		try {
-			image1 = getImageUrl("https://images.squarespace-cdn.com/content/v1/53bb46d6e4b05c06d49b574b/1680731496553-PT8S8CQFJA7MUQERK2CE/Friday_crop.jpg");
-			image2 = getImageUrl("https://spca.bc.ca/wp-content/uploads/cat-tabby-wearing-id-at-home-looking-up.jpg");
-		} catch(IOException e ) {
-			e.printStackTrace();
-		} // codificar no formato Base64 para o front-end/Angular poder ler
-		image1 = Base64.getEncoder().encode("abc1".getBytes());
-		image2 = Base64.getEncoder().encode("cde2".getBytes());
-		*/
 		String image1 = "https://images.squarespace-cdn.com/content/v1/53bb46d6e4b05c06d49b574b/1680731496553-PT8S8CQFJA7MUQERK2CE/Friday_crop.jpg";
 		String image2 = "https://spca.bc.ca/wp-content/uploads/cat-tabby-wearing-id-at-home-looking-up.jpg";
 		String image3 = "https://img.freepik.com/fotos-premium/feche-o-retrato-de-um-jovem-cachorro-vira-lata-marrom-e-branco-avermelhado-olhando-para-cima-sentado-na-calcada-cinza-em-um-dia-ensolarado-de-verao-fundo-desfocado_222877-11483.jpg";
@@ -103,25 +92,5 @@ public class DBService {
 		adopterRepository.saveAll(Arrays.asList(adopter1, adopter2));
 		adopterPetRepository.saveAll(Arrays.asList(adopterPet1));
 
-	}
-	
-	// Pegar imagem de uma url
-	/*public static byte[] getImageUrl(String imageUrl) throws IOException {
-		URL url = new URL(imageUrl);
-		
-		try (InputStream inputStream = url.openStream();
-			 ByteArrayOutputStream outputStream = new ByteArrayOutputStream()) { // imagem em stream de bytes
-			
-			byte[] buffer = new byte[4096];
-			int bytesRead;
-			while((bytesRead = inputStream.read(buffer)) != -1) {
-				outputStream.write(buffer, 0, bytesRead); // salvar cada byte da imagem
-			}
-			
-			return outputStream.toByteArray(); // converter em array de bytes
-		}
-		
-	}*/
-	
-	
+	}	
 }

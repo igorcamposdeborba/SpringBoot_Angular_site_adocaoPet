@@ -1,13 +1,13 @@
 
-n	java:S125 "<This block of commented-out lines of code should be removed.(›‹·ý8è­óºˆ1H×~RMAJORZ
-CODE_SMELL
-s	java:S1076"AConstructor has 9 parameters, which is greater than 7 authorized.(ÍƒË—8€É’Ö…1H¿|RMAJORZ
+o	java:S125 "<This block of commented-out lines of code should be removed.(›‹·ý8è­óºˆ1Hù®RMAJORZ
 CODE_SMELL
 h
-java:S1128"4Remove this unused import 'jakarta.persistence.Lob'.(¾¡úó8¿ƒè»ˆ1H™€RMINORZ
+java:S1128"4Remove this unused import 'jakarta.persistence.Lob'.(¾¡úó8¿ƒè»ˆ1Hú®RMINORZ
 CODE_SMELL
-s	java:S125/"<This block of commented-out lines of code should be removed.(ŠÆäˆûÿÿÿÿ8ôð¤†1HÀ|RMAJORZ
+’
+java:S2293&"YReplace the type specification in this constructor call with the diamond operator ("<>").(­§µúøÿÿÿÿ8³ðíÜ„1Hü®RMINORZ
 CODE_SMELL
-‘
-java:S2293&"YReplace the type specification in this constructor call with the diamond operator ("<>").(­§µúøÿÿÿÿ8³ðíÜ„1H½|RMINORZ
+t	java:S125/"<This block of commented-out lines of code should be removed.(ŠÆäˆûÿÿÿÿ8ôð¤†1Hþ®RMAJORZ
+CODE_SMELL
+t	java:S1076"AConstructor has 9 parameters, which is greater than 7 authorized.(ÍƒË—8€É’Ö…1Hÿ®RMAJORZ
 CODE_SMELL

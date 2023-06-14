@@ -1,7 +1,17 @@
 
-z
-java:S1128"ARemove this unused import 'jakarta.validation.constraints.Email'.(Öï¤Âıÿÿÿÿ8ÄšµÀ‰1HÊŠRMINORZ
-CODE_SMELL
 
-java:S2293""YReplace the type specification in this constructor call with the diamond operator ("<>").( ËĞ¨8‹ºé€…1HŠRMINORZ
+java:S2293&"YReplace the type specification in this constructor call with the diamond operator ("<>").( ËĞ¨8ë›†‹1HÏ®RMINORZ
+CODE_SMELL
+†
+java:S1128
+"RRemove this unused import 'com.fasterxml.jackson.annotation.JsonManagedReference'.(Æ˜µ8ë›†‹1HÑ®RMINORZ
+CODE_SMELL
+ˆ
+java:S1128"ORemove this unused import 'com.fasterxml.jackson.annotation.JsonBackReference'.(»Ôœ¿ıÿÿÿÿ8ë›†‹1HÓ®RMINORZ
+CODE_SMELL
+z
+java:S1128"ARemove this unused import 'jakarta.validation.constraints.Email'.(Öï¤Âıÿÿÿÿ8ë›†‹1HÕ®RMINORZ
+CODE_SMELL
+|
+java:S1128	"HRemove this unused import 'com.fasterxml.jackson.annotation.JsonIgnore'.(ş‘‹„8ë›†‹1H×®RMINORZ
 CODE_SMELL

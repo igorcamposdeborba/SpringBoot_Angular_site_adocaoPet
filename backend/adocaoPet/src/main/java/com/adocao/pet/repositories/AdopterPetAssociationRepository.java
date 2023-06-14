@@ -14,7 +14,5 @@ public interface AdopterPetAssociationRepository extends JpaRepository<AdopterPe
 	// Adicionados métodos personalizados que são implementado no AdopterService
 	@Query("SELECT apa FROM AdopterPetAssociation apa WHERE apa.adopter.id = :adopterId") // Método personalizado por meio de Consulta personalizada com JPQL no banco de dados
 	ArrayList<AdopterPetAssociation> findByAdopterId(@Param("adopterId") Integer adopterId); // Busca pelo id do adotante o adotante na tabela associativa AdopterPetAssociation
-	//Optional<AdopterPetAssociation> findByAdopterId(@Param("adopterId") Integer adopterId); // Busca pelo id do adotante o adotante na tabela associativa AdopterPetAssociation
-	
 
 }

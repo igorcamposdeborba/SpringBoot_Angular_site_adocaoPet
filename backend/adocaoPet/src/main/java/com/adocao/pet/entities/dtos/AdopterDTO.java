@@ -6,6 +6,9 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import com.adocao.pet.entities.Adopter;
 import com.adocao.pet.entities.AdopterPetAssociation;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.Email;
@@ -38,7 +41,7 @@ public class AdopterDTO implements Serializable {
 		this.name = objAdopter.getName();
 		this.email = objAdopter.getEmail();
 		this.telephone = objAdopter.getTelephone();
-		this.adopterPetAssociation = objAdopter.getAllDateRequestAdotation().stream().map( i -> i).collect(Collectors.toSet()); // REVISAR se tá certo passar a lista de requests. O ideal é substituir a data do o último request
+		this.adopterPetAssociation = objAdopter.getAllDateRequestAdotation().stream().map( i -> i).collect(Collectors.toSet());
 	}
 	
 	public Integer getId() {

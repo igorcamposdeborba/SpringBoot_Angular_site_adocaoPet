@@ -22,8 +22,8 @@ public class PetController {
 	
 	// Endpoint GET FIND BY ID
 	@GetMapping(value = "/pets/{id}")
-	public ResponseEntity<PetDTO> findById(@PathVariable Integer id){ // controla resposta http do servidor (eu especifico header e body)
-																	  // retorna o DTO
+	public ResponseEntity<PetDTO> findById(@PathVariable Integer id){ // controla resposta http do servidor (eu especifico header e body) retorna o DTO
+
 		Pet objPet = this.petService.findById(id); // buscar objeto no banco de dados
 		
 		return ResponseEntity.ok().body(new PetDTO(objPet)); // RESPONSE para o usuário do objeto pego do banco de dados
@@ -34,7 +34,7 @@ public class PetController {
 	@GetMapping(value = {"", "/"})
 	public ResponseEntity<List<PetDTO>> findAll(){
 		List<Pet> listPet = petService.findAll(); // pegar lista de pets no banco
-												  // ! REVISAR: TALVEZ IMPLEMENTAR UM SET (porque não pode ter repetição de pets)
+												  
 		// Converter para DTO
 		List<PetDTO> listPetDTO = new ArrayList<PetDTO>();
 		for (Pet obj : listPet) {

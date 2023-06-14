@@ -7,6 +7,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.validation.annotation.Validated;
 
 import com.adocao.pet.entities.Adopter;
 import com.adocao.pet.entities.AdopterPetAssociation;
@@ -46,8 +47,7 @@ public class AdopterService {
 
 		return adopter.orElse(null);
 	}
-	
-	// !! REVISAR ver se devo implementar no AdopterDTO e aqui o relacionamento com AdopterPetAssociation E ao invés do AdopterPetAssociation salvar uma nova linha, ele atualiza o e-mail daquele usuário se já existe o e-mail para aquele Pet no banco de dados
+
 	// ADICIONA recurso no banco de dados
 	public Adopter create(Integer idPet, @Valid AdopterDTO adopterDTO) {
 		// Validações dos campos obrigatórios
@@ -70,7 +70,6 @@ public class AdopterService {
 			// Buscar no banco de dados
 			Optional<Pet> varPet = petRepository.findById(idPet);
 			adopterPetAssociation.setPet(varPet.get());
-			// adopterPetAssociationRepository.save(adopterPetAssociation); // CREATE: salvar a classe associativa no banco de dados // ! CORRIGIR: PRIMEIRO SALVA RO OBJETO ADOPTER, DEPOIS A CLASSE ASSOCIATIVA
 			
 			return adopterRepository.save(varNewAdopter); // ADICIONAR cadastro: salvar no banco de dados pelo Repository	
 		} 
@@ -81,6 +80,7 @@ public class AdopterService {
 		// Encontrar Adopter pelo email e validar exceptions
 		Adopter newAdopter = findByEmail(adopterDTO.getEmail());
 		Optional<Adopter> oldAdopter = adopterRepository.findByEmail(adopterDTO.getEmail());
+		validateName(adopterDTO);
 		validateEmail(adopterDTO);
 		validateIsPresentName(adopterDTO);
 		validateTelephone(adopterDTO);
@@ -106,7 +106,6 @@ public class AdopterService {
 		Optional<Pet> varPet = petRepository.findById(idPet);
 		
 		// ATUALIZAR DateRequest: buscar no banco de dados se já tem o Adopter na entity associativa. Se estiver, só atualizar o dateRequest (data e hora do pedido de adoção)
-		//Optional<AdopterPetAssociation> varAdopterDateRequest = adopterPetAssociationRepository.findByAdopterId(adopterObj.getId()); // buscar na classa associativa se existe o Adopter para atualizar o dateRequest
 		ArrayList<AdopterPetAssociation> varAdopterDateRequest = new ArrayList<>();
 		varAdopterDateRequest = adopterPetAssociationRepository.findByAdopterId(adopterObj.getId()); // buscar na classa associativa se existe o Adopter para atualizar o dateRequest
 		
@@ -135,33 +134,15 @@ public class AdopterService {
 		adopterPetAssociation.setPet(petObj); // atribuir objeto Pet
 		
 		return adopterPetAssociationRepository.save(adopterPetAssociation); // Salvar no banco de dados a classe de associação
-
-		
-		//if (varAdopterDateRequest.isPresent()) {
-		/*
-		if (varAdopterDateRequest.isPresent() && varAdopterDateRequest.get().getPet().getId() == idPet) {
-			varAdopterDateRequest.get().changeDateRequest(Instant.now());
-			
-			return adopterPetAssociationRepository.save(varAdopterDateRequest.get()); // Salvar no banco de dados a classe de associação
-			
-			
-		} else { // CRIAR REGISTRO: criar nova linha porque não tem esse usuário na classe associativa AdopterPet
-			// Converter DTO para Objeto e atribuir Objetos
-			AdopterPetAssociation adopterPetAssociation = new AdopterPetAssociation(); // criar data e hora do request
-			adopterPetAssociation.setAdopter(adopterObj); // atribuir objeto Adopter
-
-			Pet petObj = null;
-			if (varPet.isPresent()) {
-				petObj = varPet.orElse(null);
-			}
-			adopterPetAssociation.setPet(petObj); // atribuir objeto Pet
-			
-			return adopterPetAssociationRepository.save(adopterPetAssociation); // Salvar no banco de dados a classe de associação
-		}*/
-	}
-	
+	}	
 	
 	// VALIDAÇÃO Obrigatória
+	private void validateName(AdopterDTO adopterDTO) {
+		if (adopterDTO.getName().equals(" ") || adopterDTO.getName().equals("-")) {
+			throw new NullPointerException("O campo NOME não pode estar vazio");
+		}
+	}
+	
 	private void validateEmail(AdopterDTO adopterDTO) {
 		if (adopterDTO == null) {
 			throw new NullPointerException("O campo E-MAIL é obrigatório");
@@ -171,7 +152,7 @@ public class AdopterService {
 			throw new IllegalFormatException("Formato errado de E-MAIL. Exemplo: teste@hotmail.com. Não use o e-mail do exemplo.");
 		}
 		
-		if (!adopterDTO.getEmail().contains("@")) {
+		if (!adopterDTO.getEmail().contains("@") || adopterDTO.getEmail().equals("@")) {
 			throw new IllegalFormatException("Formato errado de E-MAIL. Exemplo: teste@hotmail.com");
 		}
 	}

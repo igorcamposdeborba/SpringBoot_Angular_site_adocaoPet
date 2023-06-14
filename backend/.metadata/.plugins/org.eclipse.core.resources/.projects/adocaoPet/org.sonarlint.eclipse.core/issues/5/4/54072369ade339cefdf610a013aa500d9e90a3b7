@@ -1,13 +1,32 @@
 
-}
-java:S1854/"IRemove this useless assignment to local variable "adopterPetAssociation".(ˆŠ³Å8Ç Õ˜†1H²ŠRMAJORZ
-CODE_SMELL
-}
-java:S1854#"IRemove this useless assignment to local variable "adopterPetAssociation".(ˆŠ³Å8»²¾˜†1H¯ŠRMAJORZ
+n
+java:S1481*":Remove this unused "adopterPetAssociation" local variable.(ˆŠ³Å8Ç Õ˜†1H½®RMINORZ
 CODE_SMELL
 n
-java:S1481/":Remove this unused "adopterPetAssociation" local variable.(ˆŠ³Å8»²¾˜†1H³ŠRMINORZ
+java:S14816":Remove this unused "adopterPetAssociation" local variable.(ˆŠ³Å8»²¾˜†1H¿®RMINORZ
 CODE_SMELL
-n
-java:S1481#":Remove this unused "adopterPetAssociation" local variable.(ˆŠ³Å8Ç Õ˜†1H°ŠRMINORZ
+y
+java:S1128"@Remove this unused import 'com.adocao.pet.entities.dtos.PetDTO'.(…÷Á®ûÿÿÿÿ8ÃùöŒ‹1HÁ®RMINORZ
+CODE_SMELL
+}
+java:S1854*"IRemove this useless assignment to local variable "adopterPetAssociation".(ˆŠ³Å8Ç Õ˜†1HÃ®RMAJORZ
+CODE_SMELL
+d
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8±á”Ž‹1HÄ®RMINORZ
+CODE_SMELL
+ƒ
+java:S1128
+"ORemove this unused import 'org.springframework.web.bind.annotation.GetMapping'.(‡¡‰Ø8±á”Ž‹1HÆ®RMINORZ
+CODE_SMELL
+q
+java:S1128"8Remove this unused import 'com.adocao.pet.entities.Pet'.(É½À¤øÿÿÿÿ8ÃùöŒ‹1HÈ®RMINORZ
+CODE_SMELL
+‹
+java:S1128"RRemove this unused import 'com.adocao.pet.entities.dtos.AdopterPetAssociationDTO'.(‰êÀûÿÿÿÿÿ8±á”Ž‹1HÊ®RMINORZ
+CODE_SMELL
+d
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8±á”Ž‹1HÌ®RMINORZ
+CODE_SMELL
+}
+java:S18546"IRemove this useless assignment to local variable "adopterPetAssociation".(ˆŠ³Å8»²¾˜†1HÎ®RMAJORZ
 CODE_SMELL

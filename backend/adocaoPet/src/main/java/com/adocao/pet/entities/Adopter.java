@@ -5,6 +5,10 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 import com.adocao.pet.entities.dtos.AdopterDTO;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -81,7 +85,7 @@ public class Adopter implements Serializable {
 	public void setTelephone(String telephone) {
 		this.telephone = telephone;
 	}
-	public Adopter setAdopter(Adopter adopter) { // REVISAR
+	public Adopter setAdopter(Adopter adopter) {
 		this.name = adopter.getName();
 		this.email= adopter.getEmail();
 		this.telephone = adopter.getTelephone();
@@ -95,13 +99,7 @@ public class Adopter implements Serializable {
 	public void createDateRequestAdotation() {
 		this.adopterPetAssociation.add(new AdopterPetAssociation());
 	}
-	public void addDateRequestAdotation() { // ! REVISAR para ver se precisa porque o método createDateRequestAdotation já faz a mesma coisa
-		AdopterPetAssociation varRequestAdotation = new AdopterPetAssociation(); // criar objeto de data e hora do request de pedido de adoção
-		
-		this.adopterPetAssociation.add(varRequestAdotation); // adicionar na lista a data e hora do pedido de adoção
-	}
-	
-	
+
 	// Hashcode e Equals: para poder adicionar valores comparando os valores dos objetos da lista List<AdopterPetAssociation> e List<Pet> pet
 	@Override
 	public int hashCode() {
