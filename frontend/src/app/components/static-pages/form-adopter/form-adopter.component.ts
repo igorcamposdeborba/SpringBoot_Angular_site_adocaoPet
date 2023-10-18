@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { ActivatedRoute } from '@angular/router';
-
+import { API_CONFIG } from 'src/app/config/api.config';
 
 @Component({
   selector: 'app-form-adopter',
@@ -35,7 +35,7 @@ export class FormAdopterComponent {
 
   submitForm(formData: any) {
 
-    const url = `http://localhost:8080/adotante/${this.getLastNumberFromURL()}`;
+    const url = `${API_CONFIG.baseUrl}/adotante/${this.getLastNumberFromURL()}`;
     const adopter = {
       name: this.name,
       email: this.email,
